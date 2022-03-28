@@ -20,38 +20,29 @@ import com.google.firebase.ktx.Firebase
 class MainActivity : AppCompatActivity() {
     private var mAuth: FirebaseAuth? = null
     private var mAuthListener: FirebaseAuth.AuthStateListener? = null
-    private var mEmail: EditText? = null
-    private var mPassword: EditText? = null
+    private var etEmailAddress: EditText? = null
+    private var etPassword: EditText? = null
     private var btnSignIn: Button? = null
-    private var emailaddress: EditText? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        mEmail = findViewById<EditText>(R.id.email)
-        mPassword = findViewById<EditText>(R.id.password)
-        btnSignIn = findViewById<Button>(R.id.main_activity_login_button)
+        etEmailAddress = findViewById<EditText>(R.id.main_activity_login_email_address_et)
+        etPassword = findViewById<EditText>(R.id.main_activity_login_password_et)
+        btnSignIn = findViewById<Button>(R.id.main_activity_login_signin_btn)
         mAuth = FirebaseAuth.getInstance()
         val db = Firebase.firestore
 
         db.collection("inventory").document("ZPC_CB01")
-            .update("available_stock", 8)
+            .update("available_stock", 8,"issued_stock",0)
+
 
         db.collection("inventory").document("ZPC_CB02")
-            .update("available_stock", 12)
+            .update("available_stock", 12,"issued_stock",0)
 
         db.collection("inventory").document("ZPC_CB03")
-            .update("available_stock", 3)
-
-        db.collection("inventory").document("ZPC_CB01")
-            .update("issued_stock", -1)
-
-        db.collection("inventory").document("ZPC_CB02")
-            .update("issued_stock", -1)
-
-        db.collection("inventory").document("ZPC_CB03")
-            .update("issued_stock", -1)
+            .update("available_stock", 3,"issued_stock",0)
 
 
         mAuthListener = FirebaseAuth.AuthStateListener { firebaseAuth ->
@@ -64,9 +55,6 @@ class MainActivity : AppCompatActivity() {
 
                 val i = Intent(this@MainActivity, LoginSuccessfulActivity::class.java)
                 startActivity(i)
-                Toast.makeText(this,
-                    "Successfully signed in with: " + user.getEmail(),
-                    Toast.LENGTH_SHORT).show()
                 finish()
 
             } else {
@@ -118,8 +106,8 @@ class MainActivity : AppCompatActivity() {
             main_activity_login_button!!.setOnClickListener {
 
                 if (checkForInternet(this)) {
-                    val email = mEmail!!.text.toString()
-                    val pass = mPassword!!.text.toString()
+                    val email = etEmailAddress!!.text.toString()
+                    val pass = etPassword!!.text.toString()
                     if (email != "" && pass != "") {
                         mAuth!!.signInWithEmailAndPassword(email, pass)
                             .addOnFailureListener{
@@ -187,33 +175,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun checkForInternet(context: Context): Boolean {
-
-        // register activity with the connectivity manager service
         val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
 
-        // if the android version is equal to M
-        // or greater we need to use the
-        // NetworkCapabilities to check what type of
-        // network has the internet connection
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-
-            // Returns a Network object corresponding to
-            // the currently active default data network.
             val network = connectivityManager.activeNetwork ?: return false
-
-            // Representation of the capabilities of an active network.
             val activeNetwork = connectivityManager.getNetworkCapabilities(network) ?: return false
 
             return when {
-                // Indicates this network uses a Wi-Fi transport,
-                // or WiFi has network connectivity
                 activeNetwork.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) -> true
-
-                // Indicates this network uses a Cellular transport. or
-                // Cellular has network connectivity
                 activeNetwork.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) -> true
-
-                // else return false
                 else -> false
             }
         } else {
