@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "265960874453",
+    "project_id": "zoyinc-powered-comics-firebase",
+    "storage_bucket": "zoyinc-powered-comics-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265960874453:android:bf7128b51135e796991d5c",
+        "android_client_info": {
+          "package_name": "nz.co.zoyinc.zoyincpoweredcomics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265960874453-j8vic0qca0e0jcru6i10vl76b9ha76m2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOUVZokP-BLHawvCPREHcvE1Aj3neoBwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265960874453-j8vic0qca0e0jcru6i10vl76b9ha76m2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
