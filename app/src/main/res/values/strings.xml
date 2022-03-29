@@ -1,3 +1,68 @@
 <resources>
+    //General String Values for Global Use.//
     <string name="app_name">Zoyinc Powered Comics</string>
+    <string name="zoyinc_powered_comics_logo_description">The logo for Zoyinc Powered Comics.</string>
+
+    //Developer's Details (Joshua Paterson's Details)//
+    <string name="application_developer">Joshua Paterson</string>
+    <string name="developers_organisation">Zoyinc NZ</string>
+    <string name="developers_contact_email_address">software@zoyinc.co.nz</string>
+    <string name="developers_contact_website">www.zoyinc.co.nz</string>
+
+    //Consumer's Details (Henderson High School's Details)//
+    <string name="consumers_organisation">Henderson High School</string>
+    <string name="consumers_contact_registered_address">21 Henderson Valley Road, Henderson, Auckland 0612</string>
+    <string name="consumers_contact_phone_number">09 838 9085</string>
+    <string name="consumers_contact_website">www.hhs.school.nz</string>
+
+    //Main Activity String Values//
+    <string name="main_activity_login_heading"><u>Welcome to Zoyinc Powered Comics -</u></string>
+    <string name="main_activity_login_subheading">Please login using your credentials below.</string>
+    <string name="main_activity_email_address_etext_actionlabel">Email Address</string>
+    <string name="main_activity_password_etext_actionlabel">Password</string>
+    <string name="main_activity_email_address_etext_input_hint">Email Address:</string>
+    <string name="main_activity_password_etext_input_hint">Password:</string>
+    <string name="main_activity_login_btn_txt_dsp">Login</string>
+    <string name="main_activity_register_btn_txt_dsp">Register</string>
+    <string name="main_activity_password_reminder_dsp">Forgot your Password? </string>
+    <string name="main_activity_password_rq_btn_dsp"> Reset Password</string>
+
+
+
+
+
+
+
+
+
+    //Login Successful Activity's Content//
+    <string name="login_successful_page">Login Successful Page</string>
+
+    //Issue Inventory Activity's Content//
+    <string name="issue_inventory_page_name"><u>Issue Inventory!</u></string>
+    <string name="issue_inventory_btn_name"><u>Issue Item</u></string>
+
+    //Return Inventory Activity's Content//
+    <string name="return_inventory_page_name"><u>Return Inventory!</u></string>
+    <string name="return_inventory_btn_name"><u>Return Item</u></string>
+
+    //Account Details Activity's Content//
+    <string name="accountdetails_activity_page_name"><u>Account Details!</u></string>
+
+    //Image Content Descriptions//
+    <string name="zoyinc_logo_description">Logo for Zoyinc NZ</string>
+
+    //Order Status//
+    <string name="order_status_completed">Book Sucessfully Issued</string>
+    <string name="order_status_uncompleted">Book Sucessfully Returned</string>
+    <string name="title_activity_login_pop_up">Login_Pop_Up</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
 </resources>

@@ -10,11 +10,13 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +24,6 @@ class MainActivity : AppCompatActivity() {
     private var mAuthListener: FirebaseAuth.AuthStateListener? = null
     private var etEmailAddress: EditText? = null
     private var etPassword: EditText? = null
-    private var btnSignIn: Button? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,13 +31,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         etEmailAddress = findViewById<EditText>(R.id.main_activity_login_email_address_et)
         etPassword = findViewById<EditText>(R.id.main_activity_login_password_et)
-        btnSignIn = findViewById<Button>(R.id.main_activity_login_signin_btn)
+
         mAuth = FirebaseAuth.getInstance()
         val db = Firebase.firestore
 
         db.collection("inventory").document("ZPC_CB01")
             .update("available_stock", 8,"issued_stock",0)
-
 
         db.collection("inventory").document("ZPC_CB02")
             .update("available_stock", 12,"issued_stock",0)
@@ -49,43 +49,41 @@ class MainActivity : AppCompatActivity() {
             val user = firebaseAuth.currentUser
             if (user != null) {
 
-                // User is signed in
                 Log.d(TAG, "onAuthStateChanged:signed_in:" + user.uid)
-                toastMessage("Successfully signed in with: " + user.email)
+                Toast.makeText(this, "Successfully signed in with: " + user.email, Toast.LENGTH_SHORT).show()
 
-                val i = Intent(this@MainActivity, LoginSuccessfulActivity::class.java)
-                startActivity(i)
+                val exitIntent = Intent(this@MainActivity, LoginSuccessfulActivity::class.java)
+                startActivity(exitIntent)
                 finish()
 
             } else {
-                // User is signed out
                 Log.d(TAG, "onAuthStateChanged:signed_out")
             }
         }
 
-        main_activity_login_button!!.setOnClickListener {
-            val email = mEmail!!.text.toString()
-            val pass = mPassword!!.text.toString()
-            if (email != "" && pass != "") {
-                mAuth!!.signInWithEmailAndPassword(email, pass)
+        main_activity_login_btn!!.setOnClickListener {
+            val val_etEmailAddress = etEmailAddress!!.text.toString()
+            val val_etPassword = etPassword!!.text.toString()
+            if (val_etEmailAddress != "" && val_etPassword != "") {
+                mAuth!!.signInWithEmailAndPassword(val_etEmailAddress, val_etPassword)
                     .addOnFailureListener{
-                        toastMessage("Incorrect Credentials, please try again.")
+                        Toast.makeText(this, "Incorrect credentials, please try again.", Toast.LENGTH_SHORT).show()
                     }
 
             } else {
-                toastMessage("You didn't fill in all the fields.")
+                    Toast.makeText(this, "Sorry, you can't sign in. Try again when you have internet.", Toast.LENGTH_SHORT).show())
             }
         }
 
-        main_activity_reset_password_main_btn.setOnClickListener {
-            val i = Intent(this@MainActivity, ResetPasswordActivity::class.java)
-            startActivity(i)
+        main_activity_reset_password_btn.setOnClickListener {
+            val exitIntent = Intent(this@MainActivity, ResetPasswordActivity::class.java)
+            startActivity(exitIntent)
             finish()
         }
 
-        main_activity_register_button.setOnClickListener {
-            val i = Intent(this@MainActivity, RegisterAccountActivity::class.java)
-            startActivity(i)
+        main_activity_register_btn.setOnClickListener {
+            val exitIntent = Intent(this@MainActivity, RegisterAccountActivity::class.java)
+            startActivity(exitIntent)
             finish()
         }
     }
@@ -94,64 +92,57 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         mAuth!!.addAuthStateListener(mAuthListener!!)
 
-        if (checkForInternet(this)) {
-            Toast.makeText(this, "Connected", Toast.LENGTH_SHORT).show()
+        if (internetConnectionChecker(this)) {
+            Toast.makeText(this, "Internet Connected", Toast.LENGTH_SHORT).show()
         } else {
             Toast.makeText(this, "Disconnected - No Internet", Toast.LENGTH_SHORT).show()
             Firebase.auth.signOut()
-            main_activity_login_button!!.setOnClickListener {
-                toastMessage("Sorry, you can't sign in. Try again when you have internet.")
+            main_activity_login_btn!!.setOnClickListener {
+                Toast.makeText(this, "Sorry, you can't sign in. Try again when you have internet.", Toast.LENGTH_SHORT).show()
             }
 
-            main_activity_login_button!!.setOnClickListener {
-
-                if (checkForInternet(this)) {
+            main_activity_login_btn!!.setOnClickListener {
+                if (internetConnectionChecker(this)) {
                     val email = etEmailAddress!!.text.toString()
                     val pass = etPassword!!.text.toString()
                     if (email != "" && pass != "") {
                         mAuth!!.signInWithEmailAndPassword(email, pass)
                             .addOnFailureListener{
-                                toastMessage("Incorrect Credentials, please try again.")
+                                Toast.makeText(this, "Incorrect Credentials, please try again.", Toast.LENGTH_SHORT).show()
                             }
-
                     } else {
-                        toastMessage("You didn't fill in all the fields.")
+                        Toast.makeText(this, "You didn't fill in all the fields.", Toast.LENGTH_SHORT).show()
                     }
-
                 } else {
                     Toast.makeText(this, "Disconnected - No Internet", Toast.LENGTH_SHORT).show()
-                    val i = Intent(this@MainActivity, MainActivity::class.java)
-                    startActivity(i)
+                    val exitIntent = Intent(this@MainActivity, MainActivity::class.java)
+                    startActivity(exitIntent)
                     finish()
-
-                }
-
-            }
-
-
-            main_activity_reset_password_main_btn.setOnClickListener {
-                if (checkForInternet(this)) {
-                    val i = Intent(this@MainActivity, ResetPasswordActivity::class.java)
-                    startActivity(i)
-                    finish()
-                } else {
-                    Toast.makeText(this, "Disconnected - No Internet", Toast.LENGTH_SHORT).show()
-                    val i = Intent(this@MainActivity, MainActivity::class.java)
-                    startActivity(i)
-                    finish()
-
                 }
             }
 
-            main_activity_register_button.setOnClickListener {
-                if (checkForInternet(this)) {
-                    val i = Intent(this@MainActivity, RegisterAccountActivity::class.java)
-                    startActivity(i)
+            main_activity_reset_password_btn.setOnClickListener {
+                if (internetConnectionChecker(this)) {
+                    val exitIntent = Intent(this@MainActivity, ResetPasswordActivity::class.java)
+                    startActivity(exitIntent)
                     finish()
                 } else {
                     Toast.makeText(this, "Disconnected - No Internet", Toast.LENGTH_SHORT).show()
-                    val i = Intent(this@MainActivity, MainActivity::class.java)
-                    startActivity(i)
+                    val exitIntent = Intent(this@MainActivity, MainActivity::class.java)
+                    startActivity(exitIntent)
+                    finish()
+                }
+            }
+
+            main_activity_register_btn.setOnClickListener {
+                if (internetConnectionChecker(this)) {
+                    val exitIntent = Intent(this@MainActivity, RegisterAccountActivity::class.java)
+                    startActivity(exitIntent)
+                    finish()
+                } else {
+                    Toast.makeText(this, "Disconnected - No Internet", Toast.LENGTH_SHORT).show()
+                    val exitIntent = Intent(this@MainActivity, MainActivity::class.java)
+                    startActivity(exitIntent)
                     finish()
                 }
             }
@@ -166,15 +157,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun toastMessage(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-    }
-
     companion object {
         private const val TAG = "MainActivity"
     }
 
-    private fun checkForInternet(context: Context): Boolean {
+    private fun internetConnectionChecker(context: Context): Boolean {
         val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -187,7 +174,6 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         } else {
-            // if the android version is below M
             @Suppress("DEPRECATION") val networkInfo =
                 connectivityManager.activeNetworkInfo ?: return false
             @Suppress("DEPRECATION")
