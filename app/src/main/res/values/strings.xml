@@ -30,6 +30,9 @@
 
     //Login Successful Activity's Content//
     <string name="login_successful_page">Login Successful Page</string>
+    <string name="loginsuccessful_activity_main_heading"><u>Welcome Back!</u></string>
+    <string name="loginsuccessful_activity_sub_heading">Zoyinc Powered Comics - A library for comic books.</string>
+    <string name="loginsuccessful_activity_signed_in_txt_dsp"> You have sucessfully signed in as:</string>
 
     //Issue Inventory Activity's Content//
     <string name="issue_inventory_page_name"><u>Issue Inventory!</u></string>

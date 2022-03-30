@@ -46,6 +46,7 @@
                 android:textSize="30dp"
                 android:maxLines="1"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:autoSizeTextType="uniform"
                 android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                 android:gravity="center_horizontal"/>
@@ -78,7 +79,8 @@
                     android:hint="@string/main_activity_email_address_etext_input_hint"
                     android:imeActionLabel="@string/main_activity_email_address_etext_actionlabel"
                     android:imeOptions="actionUnspecified"
-                    android:maxLines="1"/>
+                    android:maxLines="1"
+                    android:textColor="@color/black"/>
 
 
                 <EditText
@@ -94,7 +96,8 @@
                     android:imeActionLabel="@string/main_activity_password_etext_actionlabel"
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
-                    android:maxLines="1"/>
+                    android:maxLines="1"
+                    android:textColor="@color/black"/>
             </LinearLayout>
 
             <LinearLayout

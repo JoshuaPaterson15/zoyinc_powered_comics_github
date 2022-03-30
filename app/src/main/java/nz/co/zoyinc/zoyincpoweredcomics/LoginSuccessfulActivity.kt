@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_login_successful.*
 
 
 class LoginSuccessfulActivity : AppCompatActivity() {
@@ -18,7 +19,7 @@ class LoginSuccessfulActivity : AppCompatActivity() {
         val mAuth = FirebaseAuth.getInstance()
         var stored_userDetails = FirebaseAuth.getInstance().currentUser
         var stored_emailAddress = stored_userDetails!!.email
-        val usersEmail_set = findViewById<TextView>(R.id.loginsuccessful_activity_user_email_dsp_txt_view)
+        val usersEmail_set = findViewById<TextView>(R.id.loginsuccessful_activity_signed_in_email_dsp)
 
 
         usersEmail_set.setText(stored_userDetails!!.getEmail())
