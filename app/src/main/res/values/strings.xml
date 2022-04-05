@@ -62,8 +62,12 @@
     <string name="restock_activity_main_heading"><u>Restock Inventory -</u></string>
     <string name="restock_inventory_btn_name">Restock Item</string>
 
+    <string name="restockinventorystatuschangerq_activity_heading">Please type the amount of inventory stock you are restocking onto the system.</string>
+    <string name="restockinventorystatuschangerq_activity_edittxt_hint">Quantity</string>
+
     //Inventory Changed//
     <string name="inventorystatuschanged_activity_main_heading"><u>Inventory Status Changed -</u></string>
 
     // General
+    <string name="continue_txt">Continue</string>
 </resources>

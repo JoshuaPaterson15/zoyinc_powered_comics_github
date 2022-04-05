@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZoyincPoweredComics">
         <activity
+            android:name=".RestockInventoryStatusChangeRqActivity"
+            android:exported="true" />
+        <activity
             android:name=".RestockInventoryActivity"
             android:exported="true" />
         <activity

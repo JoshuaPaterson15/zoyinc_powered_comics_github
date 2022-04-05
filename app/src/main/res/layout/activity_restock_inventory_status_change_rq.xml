@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/restockinventorystatuschangerq_activity_scroll_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background_colour"
+    android:orientation="vertical"
+    app:layout_constraintCircleRadius="20dp"
+    tools:context=".RestockInventoryStatusChangeRqActivity">
+
+    <LinearLayout
+        android:id="@+id/restockinventorystatuschangerq_activity_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/restockinventorystatuschangerq_activity_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/secondary_background"
+            android:text="@string/restockinventorystatuschangerq_activity_heading"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <EditText
+            android:id="@+id/restockinventorystatuschangerq_activity_user_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:background="@drawable/text_input_background"
+            android:hint="@string/restockinventorystatuschangerq_activity_edittxt_hint"
+            android:inputType="phone"
+            android:maxLines="1" />
+
+        <LinearLayout
+            android:id="@+id/restockinventorystatuschangerq_activity_linear_layout_for_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+
+            <Button
+                android:id="@+id/restockinventorystatuschangerq_activity_confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/primary_button_background"
+                android:text="@string/continue_txt"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/restockinventorystatuschangerq_activity_cancel_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/primary_button_background"
+                android:text="@string/cancel_txt"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
