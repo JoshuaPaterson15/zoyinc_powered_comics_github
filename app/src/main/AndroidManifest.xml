@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZoyincPoweredComics">
         <activity
+            android:name=".RestockInventoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InventoryStatusChangedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InventoryStatusChangeRqActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ReturnInventoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".IssueInventoryActivity"
+            android:exported="true" />
+        <activity
             android:name=".LoginSuccessfulActivity"
             android:exported="true" />
         <activity

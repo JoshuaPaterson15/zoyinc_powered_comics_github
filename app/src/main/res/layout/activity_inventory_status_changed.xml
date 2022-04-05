@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inventory_status_changed_activity_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintCircleRadius="20dp"
+    android:background="@color/primary_background_colour"
+    android:orientation="vertical"
+    tools:context=".InventoryStatusChangeRqActivity">
+
+    <LinearLayout
+        android:id="@+id/inventory_status_changed_activity_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintCircleRadius="20dp">
+
+
+        <TextView
+            android:id = "@+id/inventory_status_changed_activity_main_heading"
+            android:text="@string/inventorystatuschanged_activity_main_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:autoSizeMaxTextSize="30dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/inventory_status_changed_activity_general_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:text="Congratulations, you have successfully ${} a ${} from Zoyinc Inventory."
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:id="@+id/inventory_status_changed_activity_linear_layout_for_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+
+            <Button
+                android:id="@+id/inventory_status_changed_activity_acknowledgement_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/primary_button_background"
+                android:text="@string/ok_txt"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

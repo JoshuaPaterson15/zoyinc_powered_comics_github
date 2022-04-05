@@ -35,12 +35,17 @@
     <string name="loginsuccessful_activity_signed_in_txt_dsp"> You have sucessfully signed in as:</string>
 
     //Issue Inventory Activity's Content//
-    <string name="issue_inventory_page_name"><u>Issue Inventory!</u></string>
+    <string name="issue_inventory_page_name"><u>Issue Inventory</u></string>
+    <string name="issueinventory_activity_main_heading"><u>Issue Inventory -</u></string>
     <string name="issue_inventory_btn_name"><u>Issue Item</u></string>
 
     //Return Inventory Activity's Content//
     <string name="return_inventory_page_name"><u>Return Inventory!</u></string>
     <string name="return_inventory_btn_name"><u>Return Item</u></string>
+    <string name="returninventory_activity_main_heading"><u>Return Inventory -</u></string>
+
+    //Rq Activity//
+    <string name="inventorystatuschangerq_activity_main_heading"><u>Change Inventory Status - </u></string>
 
     //Account Details Activity's Content//
     <string name="accountdetails_activity_page_name"><u>Account Details!</u></string>
@@ -48,17 +53,17 @@
     //Image Content Descriptions//
     <string name="zoyinc_logo_description">Logo for Zoyinc NZ</string>
 
-    //Order Status//
-    <string name="order_status_completed">Book Sucessfully Issued</string>
-    <string name="order_status_uncompleted">Book Sucessfully Returned</string>
-    <string name="title_activity_login_pop_up">Login_Pop_Up</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    //General Comments//
+    <string name="yes_text_txt">Yes</string>
+    <string name="cancel_txt">Cancel</string>
+    <string name="ok_txt">Ok</string>
 
+    //Restock//
+    <string name="restock_activity_main_heading"><u>Restock Inventory -</u></string>
+    <string name="restock_inventory_btn_name">Restock Item</string>
+
+    //Inventory Changed//
+    <string name="inventorystatuschanged_activity_main_heading"><u>Inventory Status Changed -</u></string>
+
+    // General
 </resources>
