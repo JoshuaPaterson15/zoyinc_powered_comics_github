@@ -1,16 +1,15 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_activity_relative_layout_overall"
+    android:id="@+id/register_account_activity_relative_layout_overall"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_background_colour"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    tools:context=".RegisterAccountActivity">
 
     <ScrollView
-        android:id="@+id/main_activity_scroll_view_overall"
+        android:id="@+id/register_account_activity_scroll_view_overall"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="20dp"
@@ -18,14 +17,14 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/main_activity_linear_layout_for_logo_and_welcome_text"
+            android:id="@+id/register_account_activity_linear_layout_for_logo_and_welcome_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
 
             <ImageView
-                android:id="@+id/main_activity_zoyinc_powered_comics_logo_dsp"
+                android:id="@+id/register_account_activity_zoyinc_powered_comics_logo_dsp"
                 android:contentDescription="@string/zoyinc_powered_comics_logo_description"
                 android:src="@drawable/zoyincpoweredcomics_logo"
                 android:layout_width="match_parent"
@@ -35,8 +34,8 @@
                 android:paddingBottom="10dp"/>
 
             <TextView
-                android:id="@+id/main_activity_login_heading_txt_view"
-                android:text="@string/main_activity_login_heading"
+                android:id="@+id/register_account_activity_heading"
+                android:text="@string/register_account_activity_main_heading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -52,28 +51,52 @@
                 android:gravity="center_horizontal"/>
 
             <TextView
-                android:id="@+id/main_activity_login_subheading_txt_view"
-                android:text="@string/main_activity_login_subheading"
+                android:id="@+id/register_account_activity_login_subheading_txt_view"
+                android:text="@string/register_account_activity_subheading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:paddingTop="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:textSize="15dp"
-                android:textColor="@color/black" />
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
+                android:gravity="center_horizontal"/>
+
 
 
             <LinearLayout
-                android:id="@+id/main_activity_linear_layout_for_login_edittext"
+                android:id="@+id/register_account_activity_linear_layout_for_user_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
                 android:orientation="vertical">
 
+
                 <EditText
-                    android:id="@+id/main_activity_login_email_address_et"
+                    android:id="@+id/userName_txt_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
+                    android:padding="10dp"
+                    android:background="@drawable/primary_edit_text_background"
+                    android:hint="@string/full_name_etext_input_hint"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/userEmail_txt_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
                     android:padding="10dp"
                     android:background="@drawable/primary_edit_text_background"
                     android:hint="@string/email_address_etext_input_hint"
@@ -82,9 +105,8 @@
                     android:maxLines="1"
                     android:textColor="@color/black"/>
 
-
                 <EditText
-                    android:id="@+id/main_activity_login_password_et"
+                    android:id="@+id/userPassword_txt_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -98,69 +120,65 @@
                     android:inputType="textPassword"
                     android:maxLines="1"
                     android:textColor="@color/black"/>
+
+
+
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/main_activity_linear_layout_for_action_btns"
+                android:id="@+id/register_account_activity_linear_layout_for_buttons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp">
 
 
                 <Button
-                    android:id="@+id/main_activity_login_btn"
-                    android:text="@string/main_activity_login_btn_txt_dsp"
-                    android:background="@drawable/primary_button_background"
+                    android:id="@+id/register_account_activity_register_account_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
+                    android:background="@drawable/primary_button_background"
+                    android:text="@string/register_txt"
                     android:textAllCaps="false"
                     android:textColor="@color/white" />
 
 
                 <Button
-                    android:id="@+id/main_activity_register_btn"
-                    android:text="@string/main_activity_register_btn_txt_dsp"
-                    android:background="@drawable/primary_button_background"
+                    android:id="@+id/register_account_activity_cancel_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
+                    android:background="@drawable/primary_button_background"
+                    android:text="Cancel"
                     android:textAllCaps="false"
                     android:textColor="@color/white" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/main_activity_linear_layout_for_resetting_users_password"
+                android:id="@+id/register_account_activity_linear_layout_for_reset_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:padding="3dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="3dp">
 
                 <TextView
-                    android:id="@+id/main_activity_reset_password_txt_dsp"
+                    android:id="@+id/register_account_disclosure_dsp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:paddingTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textColor="@color/black"
-                    android:text="@string/main_activity_password_reminder_dsp"
+                    android:text="@string/account_registration_disclosure"
                     android:textSize="15dp" />
 
-                <TextView
-                    android:id="@+id/main_activity_reset_password_btn"
-                    android:text="@string/main_activity_password_rq_btn_dsp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:paddingTop="8dp"
-                    android:textSize="15dp"
-                    android:textColor="@color/purple_700" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

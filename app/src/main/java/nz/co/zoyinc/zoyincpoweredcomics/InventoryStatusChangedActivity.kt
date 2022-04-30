@@ -34,7 +34,7 @@ class InventoryStatusChangedActivity : AppCompatActivity() {
 
                     inventory_status_dsp.text = "Inventory ${inventory_status}ed - "
                     item_number_dsp.text =
-                        "Item/s ${inventory_status}ed: \n${documentRetrieve1.getString("product_name")}: ${documentRetrieve1.id} \n Stock Available: ${documentRetrieve1.get("stock")} \n Stock Issued: ${documentRetrieve1.get("issued_stock")}"
+                        "Item/s ${inventory_status}ed: \n${documentRetrieve1.getString("product_name")}: ${documentRetrieve1.id} \n Stock Available: ${documentRetrieve1.get("available_stock")} \n Stock Issued: ${documentRetrieve1.get("issued_stock")}"
 
                     inventory_status_changed_activity_acknowledgement_btn.setOnClickListener {
                         val i = Intent(this@InventoryStatusChangedActivity,

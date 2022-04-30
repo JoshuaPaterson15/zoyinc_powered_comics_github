@@ -74,6 +74,8 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
                         android:background="@drawable/item_list_background"
                         android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                         android:textSize="15dp" />
@@ -105,6 +107,8 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
                         android:background="@drawable/item_list_background"
                         android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                         android:textSize="15dp" />
@@ -136,6 +140,8 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
                         android:background="@drawable/item_list_background"
                         android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                         android:textSize="15dp" />
@@ -171,7 +177,7 @@
 
         <ImageButton
             android:id="@+id/returninventory_activity_login_successful_page_btn"
-            android:src="@drawable/asset_5"
+            android:src="@drawable/home_icon"
             android:background="@drawable/bottom_toolbar_buttons_background"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
@@ -182,7 +188,7 @@
 
         <ImageButton
             android:id="@+id/returninventory_activity_restock_inventory_page_btn"
-            android:src="@drawable/asset_4"
+            android:src="@drawable/restock_icon"
             android:background="@drawable/bottom_toolbar_buttons_background"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
@@ -194,7 +200,7 @@
 
         <ImageButton
             android:id="@+id/returninventory_activity_issue_books_page_btn"
-            android:src="@drawable/asset_2"
+            android:src="@drawable/issue_book_icon"
             android:background="@drawable/bottom_toolbar_buttons_background"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
@@ -206,7 +212,7 @@
 
         <ImageButton
             android:id="@+id/returninventory_activity_return_books_page_btn"
-            android:src="@drawable/asset_3"
+            android:src="@drawable/return_book_icon"
             android:background="@drawable/bottom_toolbar_buttons_background"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
@@ -217,7 +223,7 @@
 
         <ImageButton
             android:id="@+id/returninventory_activity_view_account_page_btnv"
-            android:src="@drawable/asset_1"
+            android:src="@drawable/user_profile_icon"
             android:background="@drawable/bottom_toolbar_buttons_background_circular"
             android:layout_width="wrap_content"
             android:layout_height="55dp"

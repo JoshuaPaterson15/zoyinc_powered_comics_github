@@ -47,7 +47,6 @@
             android:autoSizeMaxTextSize="16dp"
             android:autoSizeTextType="uniform"
             android:gravity="center_horizontal"
-            android:maxLines="1"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="8dp"

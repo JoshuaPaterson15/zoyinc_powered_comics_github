@@ -2,18 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="nz.co.zoyinc.zoyincpoweredcomics">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/zoyincpoweredcomics_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/zoyincpoweredcomics_logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ZoyincPoweredComics">
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        //In alphabetical order except for MainActivity which is the launcher activity found at the bottom.//
         <activity
-            android:name=".RestockInventoryStatusChangeRqActivity"
-            android:exported="true" />
-        <activity
-            android:name=".RestockInventoryActivity"
+            android:name=".AccountDetailsActivity"
             android:exported="true" />
         <activity
             android:name=".InventoryStatusChangedActivity"
@@ -22,20 +24,31 @@
             android:name=".InventoryStatusChangeRqActivity"
             android:exported="true" />
         <activity
-            android:name=".ReturnInventoryActivity"
-            android:exported="true" />
-        <activity
             android:name=".IssueInventoryActivity"
             android:exported="true" />
         <activity
             android:name=".LoginSuccessfulActivity"
             android:exported="true" />
         <activity
+            android:name=".RegisterAccountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RestockInventoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RestockInventoryStatusChangeRqActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ReturnInventoryActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

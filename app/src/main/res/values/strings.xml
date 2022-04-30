@@ -2,6 +2,12 @@
     //General String Values for Global Use.//
     <string name="app_name">Zoyinc Powered Comics</string>
     <string name="zoyinc_powered_comics_logo_description">The logo for Zoyinc Powered Comics.</string>
+    <string name="yes_text_txt">Yes</string>
+    <string name="cancel_txt">Cancel</string>
+    <string name="continue_txt">Continue</string>
+    <string name="ok_txt">Ok</string>
+    <string name="register_txt">Register</string>
+    <string name="zoyinc_logo_description">Logo for Zoyinc NZ</string>
 
     //Developer's Details (Joshua Paterson's Details)//
     <string name="application_developer">Joshua Paterson</string>
@@ -9,7 +15,7 @@
     <string name="developers_contact_email_address">software@zoyinc.co.nz</string>
     <string name="developers_contact_website">www.zoyinc.co.nz</string>
 
-    //Consumer's Details (Henderson High School's Details)//
+    //Client's Details (Henderson High School's Details)//
     <string name="consumers_organisation">Henderson High School</string>
     <string name="consumers_contact_registered_address">21 Henderson Valley Road, Henderson, Auckland 0612</string>
     <string name="consumers_contact_phone_number">09 838 9085</string>
@@ -18,56 +24,58 @@
     //Main Activity String Values//
     <string name="main_activity_login_heading"><u>Welcome to Zoyinc Powered Comics -</u></string>
     <string name="main_activity_login_subheading">Please login using your credentials below.</string>
-    <string name="main_activity_email_address_etext_actionlabel">Email Address</string>
-    <string name="main_activity_password_etext_actionlabel">Password</string>
-    <string name="main_activity_email_address_etext_input_hint">Email Address:</string>
-    <string name="main_activity_password_etext_input_hint">Password:</string>
+    <string name="email_address_etext_actionlabel">Email Address</string>
+    <string name="password_etext_actionlabel">Password</string>
+    <string name="email_address_etext_input_hint">Email Address:</string>
+    <string name="password_etext_input_hint">Password:</string>
     <string name="main_activity_login_btn_txt_dsp">Login</string>
     <string name="main_activity_register_btn_txt_dsp">Register</string>
     <string name="main_activity_password_reminder_dsp">Forgot your Password? </string>
     <string name="main_activity_password_rq_btn_dsp"> Reset Password</string>
+    <string name="main_activity_inventory_stock_heading_txt"><u>Inventory Stock -</u></string>
+    <string name="main_activity_inventory_stock_sub_heading_txt">Here is the current infomration we have about the stock levels for all of your comics.</string>
 
 
-    //Login Successful Activity's Content//
+    //Login Successful Activity Content//
     <string name="login_successful_page">Login Successful Page</string>
     <string name="loginsuccessful_activity_main_heading"><u>Welcome Back!</u></string>
     <string name="loginsuccessful_activity_sub_heading">Zoyinc Powered Comics - A library for comic books.</string>
     <string name="loginsuccessful_activity_signed_in_txt_dsp"> You have sucessfully signed in as:</string>
 
-    //Issue Inventory Activity's Content//
+    //Issue Inventory Activity Content//
     <string name="issue_inventory_page_name"><u>Issue Inventory</u></string>
     <string name="issueinventory_activity_main_heading"><u>Issue Inventory -</u></string>
     <string name="issue_inventory_btn_name"><u>Issue Item</u></string>
 
-    //Return Inventory Activity's Content//
+    //Return Inventory Activity Content//
     <string name="return_inventory_page_name"><u>Return Inventory!</u></string>
     <string name="return_inventory_btn_name"><u>Return Item</u></string>
     <string name="returninventory_activity_main_heading"><u>Return Inventory -</u></string>
 
-    //Rq Activity//
-    <string name="inventorystatuschangerq_activity_main_heading"><u>Change Inventory Status - </u></string>
+    //Inventory Status Change Rq Activity Content//
+    <string name="inventorystatuschangerq_activity_main_heading"><u>Change Inventory Status -</u></string>
 
-    //Account Details Activity's Content//
-    <string name="accountdetails_activity_page_name"><u>Account Details!</u></string>
+    //Account Details Activity Content//
+    <string name="account_activity_main_heading"><u>Account Details -</u></string>
 
-    //Image Content Descriptions//
-    <string name="zoyinc_logo_description">Logo for Zoyinc NZ</string>
+    //Account Registration Activity Content//
+    <string name="account_registration_disclosure">By registering with Zoyinc, you agree with the terms and conditions listed on zoyinc.co.nz</string>
+    <string name="full_name_etext_input_hint">Full Name:</string>
+    <string name="register_account_activity_subheading">Please enter the following details to register your account with Zoyinc.</string>
+    <string name="register_account_activity_main_heading"><u>Register Account -</u></string>
 
-    //General Comments//
-    <string name="yes_text_txt">Yes</string>
-    <string name="cancel_txt">Cancel</string>
-    <string name="ok_txt">Ok</string>
-
-    //Restock//
+    //Restock Activity Content//
     <string name="restock_activity_main_heading"><u>Restock Inventory -</u></string>
     <string name="restock_inventory_btn_name">Restock Item</string>
 
+    //Restock Inventory Status Change Rq Activity Content//
     <string name="restockinventorystatuschangerq_activity_heading">Please type the amount of inventory stock you are restocking onto the system.</string>
     <string name="restockinventorystatuschangerq_activity_edittxt_hint">Quantity</string>
 
-    //Inventory Changed//
+    //Inventory Changed Activity Content//
     <string name="inventorystatuschanged_activity_main_heading"><u>Inventory Status Changed -</u></string>
 
-    // General
-    <string name="continue_txt">Continue</string>
+    //User Profile Update Popup Activity Content//
+    <string name="update_profile_maintenance_message">Unfortunately you are unable to update your profile right now. This feature will be available in a future update.</string>
+
 </resources>

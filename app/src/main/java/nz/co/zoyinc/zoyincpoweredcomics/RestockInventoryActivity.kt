@@ -26,11 +26,11 @@ class RestockInventoryActivity : AppCompatActivity() {
                 if (documentRetrieve1 != null) {
                     val product_name =
                         findViewById(R.id.restockinventory_activity_item_1) as TextView
-                    product_name.text ="${documentRetrieve1.id}: ${documentRetrieve1.getString("product_name")} \nAvailable Stock: ${documentRetrieve1.get("stock")}"
+                    product_name.text ="${documentRetrieve1.id}: ${documentRetrieve1.getString("product_name")} \nAvailable Stock: ${documentRetrieve1.get("available_stock")}"
 
                     restockinventory_activity_item_1_issue_btn.setOnClickListener {
                         val i = Intent(this@RestockInventoryActivity,
-                            RestockInventoryChangeRq0::class.java)
+                            RestockInventoryStatusChangeRqActivity::class.java)
                         i.putExtra("issue_status", "Restock")
                         i.putExtra("item_document_num", "${documentRetrieve1.id}")
                         startActivity(i)
@@ -47,11 +47,11 @@ class RestockInventoryActivity : AppCompatActivity() {
             .addOnSuccessListener { documentRetrieve2 ->
                 if (documentRetrieve2 != null) {
                     val product_name = findViewById<TextView>(R.id.restockinventory_activity_item_2)
-                    product_name.text ="${documentRetrieve2.id}: ${documentRetrieve2.getString("product_name")} \nAvailable Stock: ${documentRetrieve2.get("stock")}"
+                    product_name.text ="${documentRetrieve2.id}: ${documentRetrieve2.getString("product_name")} \nAvailable Stock: ${documentRetrieve2.get("available_stock")}"
 
                     restockinventory_activity_item_2_issue_btn.setOnClickListener {
                         val i = Intent(this@RestockInventoryActivity,
-                            RestockInventoryChangeRq0::class.java)
+                            RestockInventoryStatusChangeRqActivity::class.java)
                         i.putExtra("issue_status", "Restock")
                         i.putExtra("item_document_num", "${documentRetrieve2.id}")
                         startActivity(i)
@@ -68,11 +68,11 @@ class RestockInventoryActivity : AppCompatActivity() {
             .addOnSuccessListener { documentRetrieve3 ->
                 if (documentRetrieve3 != null) {
                     val product_name = findViewById<TextView>(R.id.restockinventory_activity_item_3)
-                    product_name.text ="${documentRetrieve3.id}: ${documentRetrieve3.getString("product_name")} \nAvailable Stock: ${documentRetrieve3.get("stock")}"
+                    product_name.text ="${documentRetrieve3.id}: ${documentRetrieve3.getString("product_name")} \nAvailable Stock: ${documentRetrieve3.get("available_stock")}"
 
                     restockinventory_activity_item_3_issue_btn.setOnClickListener {
                         val i = Intent(this@RestockInventoryActivity,
-                            RestockInventoryChangeRq0::class.java)
+                            RestockInventoryStatusChangeRqActivity::class.java)
                         i.putExtra("issue_status", "Restock")
                         i.putExtra("item_document_num", "${documentRetrieve3.id}")
                         startActivity(i)

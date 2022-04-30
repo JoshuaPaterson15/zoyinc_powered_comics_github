@@ -8,9 +8,7 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -33,17 +31,17 @@ class MainActivity : AppCompatActivity() {
         etPassword = findViewById<EditText>(R.id.main_activity_login_password_et)
 
         mAuth = FirebaseAuth.getInstance()
-        val db = Firebase.firestore
 
-        db.collection("inventory").document("ZPC_CB01")
+        val firestore_database = Firebase.firestore
+
+        firestore_database.collection("comicbook_products").document("ZPC_CB01")
             .update("available_stock", 8,"issued_stock",0)
 
-        db.collection("inventory").document("ZPC_CB02")
+        firestore_database.collection("comicbook_products").document("ZPC_CB02")
             .update("available_stock", 12,"issued_stock",0)
 
-        db.collection("inventory").document("ZPC_CB03")
-            .update("available_stock", 3,"issued_stock",0)
-
+        firestore_database.collection("comicbook_products").document("ZPC_CB03")
+            .update("available_stock", 1,"issued_stock",0)
 
         mAuthListener = FirebaseAuth.AuthStateListener { firebaseAuth ->
             val user = firebaseAuth.currentUser
@@ -71,7 +69,7 @@ class MainActivity : AppCompatActivity() {
                     }
 
             } else {
-                    Toast.makeText(this, "Sorry, you can't sign in. Try again when you have internet.", Toast.LENGTH_SHORT).show())
+                    Toast.makeText(this, "Sorry, you can't sign in. Try again when you have internet.", Toast.LENGTH_SHORT).show()
             }
         }
 
