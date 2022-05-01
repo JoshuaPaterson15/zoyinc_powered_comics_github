@@ -1,4 +1,4 @@
-<resources>
+<resources> //The following string values should be easily understandable given the string names are relevant to the relevant string values.//
     //General String Values for Global Use.//
     <string name="app_name">Zoyinc Powered Comics</string>
     <string name="zoyinc_powered_comics_logo_description">The logo for Zoyinc Powered Comics.</string>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nz.co.zoyinc.zoyincpoweredcomics">
+    package="nz.co.zoyinc.zoyincpoweredcomics"> //Declearing the application package with this file.//
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" /> //Giving the relevant permissions for internet given this application connects to the Google Firebase network.//
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> //Giving the relevant permissions allowing the system to tell the app the current state of the devices network connection (e.g. connected or disconnected to the internet).//
 
     <application
         android:allowBackup="true"
@@ -11,46 +11,46 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/zoyincpoweredcomics_logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"> //Setting the default icon to the company logo and removing the default action bar from this mobile application.//
 
         //In alphabetical order except for MainActivity which is the launcher activity found at the bottom.//
         <activity
             android:name=".AccountDetailsActivity"
-            android:exported="true" />
+            android:exported="true" /> //Declearing the AccountDetailsActivity.//
         <activity
             android:name=".InventoryStatusChangedActivity"
-            android:exported="true" />
+            android:exported="true" /> //Declearing the InventoryStatusChangedActivity.//
         <activity
             android:name=".InventoryStatusChangeRqActivity"
-            android:exported="true" />
+            android:exported="true" /> //Declearing the InventoryStatusChangeRqActivity.//
         <activity
             android:name=".IssueInventoryActivity"
-            android:exported="true" />
+            android:exported="true" /> //Declearing the IssueInventoryActivity.//
         <activity
             android:name=".LoginSuccessfulActivity"
-            android:exported="true" />
+            android:exported="true" /> //Declearing the LoginSuccessfulActivity.//
         <activity
             android:name=".RegisterAccountActivity"
-            android:exported="true" />
+            android:exported="true" /> //Declearing the RegisterAccountActivity.//
         <activity
             android:name=".ResetPasswordActivity"
-            android:exported="true" />
+            android:exported="true" /> //Declearing the ResetPasswordActivity.//
         <activity
             android:name=".RestockInventoryActivity"
-            android:exported="true" />
+            android:exported="true" /> //Declearing the RestockInventoryActivity.//
         <activity
             android:name=".RestockInventoryStatusChangeRqActivity"
-            android:exported="true" />
+            android:exported="true" /> //Declearing the RestockInventoryStatusChangeRqActivity.//
         <activity
             android:name=".ReturnInventoryActivity"
-            android:exported="true" />
+            android:exported="true" /> //Declearing the ReturnInventoryActivity.//
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter> //Declearing the MainActivity and setting this activity as the main and launcher activity for this application.//
         </activity>
     </application>
 

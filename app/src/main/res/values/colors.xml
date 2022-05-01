@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary_background_colour">#57b5ff</color>
-    <color name="primary_button_colour">#60A917</color>
-    <color name="primary_toolbar_colour">#0074cf</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="primary_background_colour">#57b5ff</color> //Defining the main background colour.//
+    <color name="primary_button_colour">#60A917</color> //Defining the main button colour.//
+    <color name="primary_toolbar_colour">#0074cf</color> //Defining the main toolbar colour.//
+    <color name="purple_700">#FF3700B3</color> //Defining color value purple.//
+    <color name="black">#FF000000</color> //Defining the color value black.//
+    <color name="white">#FFFFFFFF</color> //Defining the color value white.//
 </resources>
