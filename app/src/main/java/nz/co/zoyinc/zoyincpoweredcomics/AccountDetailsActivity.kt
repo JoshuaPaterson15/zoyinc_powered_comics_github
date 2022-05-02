@@ -38,7 +38,7 @@ class AccountDetailsActivity : AppCompatActivity() {
 
         //Setting the following variable as the text value which displays the current users username/UID.//
         val userName_dsp = findViewById<TextView>(R.id.accountdetails_activity_username_dsp)
-        userName_dsp.setText("Username/UID:\n"+user_details!!.displayName)
+        userName_dsp.setText("Username/UID:\n"+user_details!!.uid)
 
 
         //Once the button named "accountdetails_activity_update_profile_btn" is pressed, the user is shown an AlertDialog/Pop-up display.//

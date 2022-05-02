@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         firestore_database.collection("comicbook_products").document("ZPC_CB02")
             .update("available_stock", 12,"issued_stock",0)
         firestore_database.collection("comicbook_products").document("ZPC_CB03")
-            .update("available_stock", 1,"issued_stock",0)
+            .update("available_stock", 3,"issued_stock",0)
 
 
         mAuthListener = FirebaseAuth.AuthStateListener { firebaseAuth ->
