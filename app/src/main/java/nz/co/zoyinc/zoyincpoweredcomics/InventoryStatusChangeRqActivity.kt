@@ -24,7 +24,7 @@ class InventoryStatusChangeRqActivity : AppCompatActivity() {
 
         //Retrieving/reading data which was previously set in the InventoryStatusChangedActivity activity and setting the retrieved data with the relevant/set variable.//
         val inventory_status = intent.getStringExtra("issue_status") //Setting the inventory_status variable as the value from the variable issue_status set from either the issue or return activity.//
-        val inventory_item_document_id = intent.getStringExtra("item_part_num") //Setting the inventory_item_document_id variable as the value from the variable item_part_num set from either the issue or return activity.//
+        val inventory_item_document_id = intent.getStringExtra("item_document_num") //Setting the inventory_item_document_id variable as the value from the variable item_part_num set from either the issue or return activity.//
         val num = 0 //Set the num variable to 0.//
 
 

@@ -12,6 +12,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_inventory_status_changed.*
 
+
 //Declearing and extending this class as an AppCompactActivity.//
 class InventoryStatusChangedActivity : AppCompatActivity() {
 
@@ -24,11 +25,10 @@ class InventoryStatusChangedActivity : AppCompatActivity() {
 
         //Retrieving/reading data which was previously set in the InventoryStatusChangedActivity activity and setting the retrieved data with the relevant/set variable.//
         val inventory_status = intent.getStringExtra("issue_status") //Setting the inventory_status variable as the value from the variable issue_status set from either the issue or return activity.//
-        val inventory_item_document_id = intent.getStringExtra("item_part_num") //Setting the inventory_item_document_id variable as the value from the variable item_part_num set from either the issue or return activity.//
+        val inventory_item_document_id = intent.getStringExtra("item_document_num") //Setting the inventory_item_document_id variable as the value from the variable item_part_num set from either the issue or return activity.//
 
         //Retrieve/Read data from product ZPC_CB01 located in the comicbook_products Firestore collection.//
-        val firestoreInfo1 =
-            firestore_val.collection("comicbook_products").document("${inventory_item_document_id}")
+        val firestoreInfo1 = firestore_val.collection("comicbook_products").document("${inventory_item_document_id}")
         firestoreInfo1.get()
 
             //The following actions are completed if the system is able to successfully retrieve/read all of the data from the comicbook_products Firestore collection.//

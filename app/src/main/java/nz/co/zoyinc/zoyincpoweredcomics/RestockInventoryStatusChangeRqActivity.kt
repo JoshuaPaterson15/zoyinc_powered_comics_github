@@ -39,6 +39,14 @@ class RestockInventoryStatusChangeRqActivity : AppCompatActivity() {
             .addOnSuccessListener { documentRetrieve1 ->
                 if (documentRetrieve1 != null) {
 
+                    //Once the button named "restockinventorystatuschangerq_activity_cancel_btn" is pressed, the user is sent to the LoginSuccessfulActivity.//
+                    restockinventorystatuschangerq_activity_cancel_btn.setOnClickListener {
+                        val i = Intent(this@RestockInventoryStatusChangeRqActivity,
+                             LoginSuccessfulActivity::class.java)
+                        startActivity(i)
+                        finish()
+                    }
+
                     //Once the button named "restockinventorystatuschangerq_activity_confirm_btn" has been pressed, the system will verify that the number provided by the user is an integer.//
                     //Once the system has verified that the user's input is an integer/numeric number, the system will send the user to the next activity (InventoryStatusChangeRqActivity).//
                     restockinventorystatuschangerq_activity_confirm_btn.setOnClickListener {
@@ -57,10 +65,9 @@ class RestockInventoryStatusChangeRqActivity : AppCompatActivity() {
                                 val i = Intent(this@RestockInventoryStatusChangeRqActivity,
                                     InventoryStatusChangeRqActivity::class.java)
                                 i.putExtra("issue_status", inventory_status)
-                                i.putExtra("item_part_num", inventory_item_document_id)
+                                i.putExtra("item_document_num", "${documentRetrieve1.id}")
                                 i.putExtra("number_requested", add_stock_val)
                                 startActivity(i)
-                                finish()
 
                             } else { //The user will be notified that they need to enter an integer value, not a string value.//
                                 Toast.makeText(this,
@@ -73,13 +80,7 @@ class RestockInventoryStatusChangeRqActivity : AppCompatActivity() {
                         }
                     }
 
-                    //Once the button named "restockinventorystatuschangerq_activity_cancel_btn" is pressed, the user is sent to the LoginSuccessfulActivity.//
-                    restockinventorystatuschangerq_activity_cancel_btn.setOnClickListener {
-                        val i = Intent(this@RestockInventoryStatusChangeRqActivity,
-                            LoginSuccessfulActivity::class.java)
-                        startActivity(i)
-                        finish()
-                    }
+
                 }
             }
             //The system records an error if the system is unable to successfully retrieve/read data from the comicbook_products Firestore collection which is related to document ZPC_CB01.//

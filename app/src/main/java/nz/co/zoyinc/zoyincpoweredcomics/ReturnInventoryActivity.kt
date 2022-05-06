@@ -46,7 +46,7 @@ class ReturnInventoryActivity : AppCompatActivity() {
                         if  (num >= 1) { //An if statement to ensure that books can only be returned if 1 or more books (with the same title) are currently issued.//
                             val i = Intent(this@ReturnInventoryActivity, InventoryStatusChangeRqActivity::class.java)
                             i.putExtra("issue_status","Return")
-                            i.putExtra("item_part_num","${documentRetrieve1.id}")
+                            i.putExtra("item_document_num","${documentRetrieve1.id}")
                             startActivity(i)
                             finish()
                         }
@@ -85,7 +85,7 @@ class ReturnInventoryActivity : AppCompatActivity() {
                         if  (num >= 1) { //An if statement to ensure that books can only be returned if 1 or more books (with the same title) are currently issued.//
                             val i = Intent(this@ReturnInventoryActivity, InventoryStatusChangeRqActivity::class.java)
                             i.putExtra("issue_status","Return")
-                            i.putExtra("item_part_num","${documentRetrieve2.id}")
+                            i.putExtra("item_document_num","${documentRetrieve2.id}")
                             startActivity(i)
                             finish()
                         }
@@ -125,7 +125,7 @@ class ReturnInventoryActivity : AppCompatActivity() {
                         if  (num >= 1) { //An if statement to ensure that books can only be returned if 1 or more books (with the same title) are currently issued.//
                             val i = Intent(this@ReturnInventoryActivity, InventoryStatusChangeRqActivity::class.java)
                             i.putExtra("issue_status","Return")
-                            i.putExtra("item_part_num","${documentRetrieve3.id}")
+                            i.putExtra("item_document_num","${documentRetrieve3.id}")
                             startActivity(i)
                             finish()
                         }

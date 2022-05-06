@@ -39,7 +39,7 @@ class RestockInventoryActivity : AppCompatActivity() {
                         val i = Intent(this@RestockInventoryActivity,
                             RestockInventoryStatusChangeRqActivity::class.java)
                         i.putExtra("issue_status", "Restock")
-                        i.putExtra("item_document_num", "${documentRetrieve1.id}")
+                        i.putExtra("item_document_num", "ZPC_CB01")
                         startActivity(i)
                         finish()
                     }
@@ -59,6 +59,7 @@ class RestockInventoryActivity : AppCompatActivity() {
             .addOnSuccessListener { documentRetrieve2 ->
                 if (documentRetrieve2 != null) {
 
+
                     //Setting the following variable as the text value for the textfield restockinventory_activity_item_2 which includes the product_name and the available_stock for item2//
                     val product_name = findViewById<TextView>(R.id.restockinventory_activity_item_2)
                     product_name.text ="${documentRetrieve2.id}: ${documentRetrieve2.getString("product_name")} \nAvailable Stock: ${documentRetrieve2.get("available_stock")}"
@@ -68,7 +69,7 @@ class RestockInventoryActivity : AppCompatActivity() {
                         val i = Intent(this@RestockInventoryActivity,
                             RestockInventoryStatusChangeRqActivity::class.java)
                         i.putExtra("issue_status", "Restock")
-                        i.putExtra("item_document_num", "${documentRetrieve2.id}")
+                        i.putExtra("item_document_num", "ZPC_CB02")
                         startActivity(i)
                         finish()
                     }
@@ -96,7 +97,7 @@ class RestockInventoryActivity : AppCompatActivity() {
                         val i = Intent(this@RestockInventoryActivity,
                             RestockInventoryStatusChangeRqActivity::class.java)
                         i.putExtra("issue_status", "Restock")
-                        i.putExtra("item_document_num", "${documentRetrieve3.id}")
+                        i.putExtra("item_document_num", "ZPC_CB03")
                         startActivity(i)
                         finish()
                     }

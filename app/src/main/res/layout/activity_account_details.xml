@@ -1,4 +1,5 @@
 
+<!-- Creating a relative layout to allow the subgroups (e.g. ImageView) to be positioned easily.-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,7 +10,7 @@
     android:orientation="vertical"
     tools:context=".AccountDetailsActivity">
 
-
+<!-- Creating a ScrollView giving users the ability to scroll down on a page if it is required. -->
     <ScrollView
         android:id="@+id/accountdetails_activity_scroll_view"
         android:layout_width="match_parent"

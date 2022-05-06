@@ -41,7 +41,7 @@ class IssueInventoryActivity : AppCompatActivity() {
                         if  (num >= 1) { //An if statement to ensure that books can only be available/in-stock if 1 or more books (with the same title) are currently available/in-stock.//
                             val i = Intent(this@IssueInventoryActivity, InventoryStatusChangeRqActivity::class.java)
                             i.putExtra("issue_status","Issue")
-                            i.putExtra("item_part_num","${documentRetrieve1.id}")
+                            i.putExtra("item_document_num","${documentRetrieve1.id}")
                             startActivity(i)
                             finish()
                         }
@@ -79,7 +79,7 @@ class IssueInventoryActivity : AppCompatActivity() {
                         if  (num >= 1) { //An if statement to ensure that books can only be issued if 1 or more books (with the same title) are currently available/in-stock.//
                             val i = Intent(this@IssueInventoryActivity, InventoryStatusChangeRqActivity::class.java)
                             i.putExtra("issue_status","Issue")
-                            i.putExtra("item_part_num","${documentRetrieve2.id}")
+                            i.putExtra("item_document_num","${documentRetrieve2.id}")
                             startActivity(i)
                             finish()
                         }
@@ -117,7 +117,7 @@ class IssueInventoryActivity : AppCompatActivity() {
                         if  (num >= 1) { //An if statement to ensure that books can only be issued if 1 or more books (with the same title) are currently available/in-stock.//
                             val i = Intent(this@IssueInventoryActivity, InventoryStatusChangeRqActivity::class.java)
                             i.putExtra("issue_status","Issue")
-                            i.putExtra("item_part_num","${documentRetrieve3.id}")
+                            i.putExtra("item_document_num","${documentRetrieve3.id}")
                             startActivity(i)
                             finish()
                         } else { //If the system detects that this book isn't currently available/in-stock, the system would notify the user that they can't issue a book because no books are currently available/in-stock and the system would avoid the book from being issued.//
