@@ -1,3 +1,4 @@
+<!--Creating a ScrollView giving users the ability to scroll down the page if it is required. -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,12 +10,14 @@
     app:layout_constraintCircleRadius="20dp"
     tools:context=".RestockInventoryStatusChangeRqActivity">
 
+    <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
     <LinearLayout
         android:id="@+id/restockinventorystatuschangerq_activity_linear_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!--Creating a textview allowing the application to display set text with the set properties below.-->
         <TextView
             android:id="@+id/restockinventorystatuschangerq_activity_heading"
             android:layout_width="wrap_content"
@@ -28,6 +31,7 @@
             android:textColor="@color/black"
             android:textSize="23sp" />
 
+        <!--Creating a text box allowing users to enter the required text with the set properties below.-->
         <EditText
             android:id="@+id/restockinventorystatuschangerq_activity_user_input"
             android:layout_width="match_parent"
@@ -41,13 +45,14 @@
             android:inputType="phone"
             android:maxLines="1" />
 
+        <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
         <LinearLayout
             android:id="@+id/restockinventorystatuschangerq_activity_linear_layout_for_buttons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp">
 
-
+            <!--Creating a button allowing the application to display a set button with the set properties below.-->
             <Button
                 android:id="@+id/restockinventorystatuschangerq_activity_confirm_btn"
                 android:layout_width="match_parent"
@@ -61,7 +66,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
 
-
+            <!--Creating a button allowing the application to display a set button with the set properties below.-->
             <Button
                 android:id="@+id/restockinventorystatuschangerq_activity_cancel_btn"
                 android:layout_width="match_parent"
@@ -74,6 +79,5 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
         </LinearLayout>
-
     </LinearLayout>
 </ScrollView>

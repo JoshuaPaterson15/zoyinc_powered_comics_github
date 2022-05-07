@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Creating a relative layout to allow the subgroups (e.g. ImageView) to be positioned easily.-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,7 +10,7 @@
     android:orientation="vertical"
     tools:context=".AccountDetailsActivity">
 
-<!-- Creating a ScrollView giving users the ability to scroll down on a page if it is required. -->
+<!--Creating a ScrollView giving users the ability to scroll down the page if it is required. -->
     <ScrollView
         android:id="@+id/accountdetails_activity_scroll_view"
         android:layout_width="match_parent"
@@ -19,12 +19,14 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+        <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
         <LinearLayout
             android:id="@+id/accountdetails_activity_linear_layout_for_logo_and_welcome_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!--Creating an imageview allowing the application to display a specified image with the set properties below.-->
             <ImageView
                 android:id="@+id/accountdetails_activity_zoyinc_logo"
                 android:layout_width="match_parent"
@@ -35,6 +37,7 @@
                 android:paddingBottom="10dp"
                 android:src="@drawable/zoyincpoweredcomics_logo" />
 
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
                 <TextView
                 android:id="@+id/accountdetails_activity_main_heading"
                 android:text="@string/account_activity_main_heading"
@@ -51,6 +54,7 @@
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/accountdetails_activity_username_dsp"
                 android:layout_width="wrap_content"
@@ -65,6 +69,7 @@
                 android:textColor="@color/black"
                 android:textSize="16dp" />
 
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/accountdetails_activity_signed_in_email_dsp"
                 android:layout_width="wrap_content"
@@ -78,7 +83,7 @@
                 android:textColor="@color/black"
                 android:textSize="16dp" />
 
-
+            <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
             <LinearLayout
                 android:id="@+id/accountdetails_activity_linear_layout_for_signout_and_update_btn"
                 android:layout_width="match_parent"
@@ -88,6 +93,7 @@
                 android:orientation="horizontal"
                 android:padding="3dp">
 
+                <!--Creating a button allowing the application to display a set button with the set properties below.-->
                 <Button
                     android:id="@+id/accountdetails_activity_update_profile_btn"
                     style="?android:textAppearanceSmall"
@@ -103,6 +109,7 @@
                     android:textAllCaps="false"
                     android:textColor="@color/black" />
 
+                <!--Creating a button allowing the application to display a set button with the set properties below.-->
                 <Button
                     android:id="@+id/accountdetails_activity_sign_out_btn"
                     style="?android:textAppearanceSmall"
@@ -117,9 +124,9 @@
                     android:text="Sign out"
                     android:textAllCaps="false"
                     android:textColor="@color/black" />
-
             </LinearLayout>
 
+            <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
             <LinearLayout
                 android:id="@+id/accountdetails_activity_linear_layout_for_external"
                 android:layout_width="match_parent"
@@ -128,6 +135,7 @@
                 android:orientation="horizontal"
                 android:padding="3dp">
 
+                <!--Creating a button allowing the application to display a set button with the set properties below.-->
                 <Button
                     android:id="@+id/accountdetails_activity_reset_password_btn"
                     style="?android:textAppearanceSmall"
@@ -143,6 +151,7 @@
                     android:textAllCaps="false"
                     android:textColor="@color/black" />
 
+                <!--Creating a button allowing the application to display a set button with the set properties below.-->
                 <Button
                     android:id="@+id/accountdetails_activity_delete_account_btn"
                     style="?android:textAppearanceSmall"
@@ -159,9 +168,9 @@
                     android:textColor="@color/black" />
             </LinearLayout>
         </LinearLayout>
-
     </ScrollView>
 
+    <!--Creating a toolbar widget to display a toolbar/navigation bar at the bottom of the page to help users navigate them-selves around the application.-->
     <androidx.appcompat.widget.Toolbar
 
         android:layout_width="match_parent"
@@ -170,8 +179,7 @@
         android:background="@drawable/bottom_toolbar_background"
         android:paddingTop="5dp">
 
-
-
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/accountdetails_activity_login_successful_page_btn"
             android:layout_width="wrap_content"
@@ -183,6 +191,7 @@
             android:scaleType="fitCenter"
             android:src="@drawable/home_icon" />
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/accountdetails_activity_restock_inventory_page_btn"
             android:layout_width="wrap_content"
@@ -195,6 +204,7 @@
             android:scaleType="fitCenter"
             android:src="@drawable/restock_icon" />
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/accountdetails_activity_issue_books_page_btn"
             android:layout_width="wrap_content"
@@ -207,6 +217,7 @@
             android:scaleType="fitCenter"
             android:src="@drawable/issue_book_icon" />
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/accountdetails_activity_return_books_page_btn"
             android:layout_width="wrap_content"
@@ -218,6 +229,7 @@
             android:scaleType="fitCenter"
             android:src="@drawable/return_book_icon" />
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/accountdetails_activity_view_account_page_btnv"
             android:layout_width="wrap_content"
@@ -229,8 +241,5 @@
             android:background="@drawable/bottom_toolbar_buttons_background_circular"
             android:scaleType="fitCenter"
             android:src="@drawable/user_profile_icon" />
-
-
     </androidx.appcompat.widget.Toolbar>
-
 </RelativeLayout>

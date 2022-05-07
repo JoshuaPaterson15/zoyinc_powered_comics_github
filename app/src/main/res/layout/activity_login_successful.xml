@@ -1,3 +1,4 @@
+<!--Creating a relative layout to allow the subgroups (e.g. ImageView) to be positioned easily.-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,7 +9,7 @@
     android:orientation="vertical"
     tools:context=".LoginSuccessfulActivity">
 
-
+    <!--Creating a ScrollView giving users the ability to scroll down the page if it is required. -->
     <ScrollView
         android:id="@+id/loginsuccessful_activity_scroll_view"
         android:layout_width="match_parent"
@@ -17,13 +18,14 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+        <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
         <LinearLayout
             android:id="@+id/loginsuccessful_activity_linear_layout_for_logo_and_welcome_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
+            <!--Creating an imageview allowing the application to display a specified image with the set properties below.-->
             <ImageView
                 android:id="@+id/loginsuccessful_activity_zoyinc_powered_comics_logo_dsp"
                 android:contentDescription="@string/zoyinc_powered_comics_logo_description"
@@ -33,7 +35,7 @@
                 android:layout_gravity="center"
                 android:paddingTop="30dp" />
 
-
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/loginsuccessful_activity_main_heading"
                 android:text="@string/loginsuccessful_activity_main_heading"
@@ -51,6 +53,7 @@
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/loginsuccessful_activity_subheading"
                 android:text="@string/loginsuccessful_activity_sub_heading"
@@ -67,6 +70,7 @@
                 android:textColor="@color/black"
                 android:textSize="30dp"/>
 
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/loginsuccessful_activity_signed_in_description"
                 android:text="@string/loginsuccessful_activity_signed_in_txt_dsp"
@@ -82,6 +86,7 @@
                 android:paddingRight="10dp"
                 android:textColor="@color/black" />
 
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/loginsuccessful_activity_signed_in_email_dsp"
                 android:layout_width="match_parent"
@@ -92,17 +97,19 @@
                 android:autoSizeMinTextSize="16dp"
                 android:autoSizeTextType="uniform"
                 android:gravity="center_horizontal"
-                android:maxLines="1"
+                android:maxLines="2"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="20dp"
                 android:textColor="@color/black" />
 
+            <!--Adding a gap between the email display and the inventory stock heading.-->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/black" />
 
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/main_activity_stock_heading_dsp"
                 android:text="@string/main_activity_inventory_stock_heading_txt"
@@ -119,6 +126,7 @@
                 android:textSize="25dp"
                 android:textStyle="bold" />
 
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/main_activity_stock_sub_heading_dsp"
                 android:layout_width="match_parent"
@@ -133,7 +141,7 @@
                 android:text="@string/main_activity_inventory_stock_sub_heading_txt"
                 android:textColor="@color/black" />
 
-
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/loginsuccessful_activity_item_1"
                 android:layout_width="wrap_content"
@@ -148,6 +156,7 @@
                 android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                 android:textSize="15dp" />
 
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/loginsuccessful_activity_item_2"
                 android:layout_width="wrap_content"
@@ -161,6 +170,7 @@
                 android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                 android:textSize="15dp" />
 
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/loginsuccessful_activity_item_3"
                 android:layout_width="wrap_content"
@@ -173,12 +183,10 @@
                 android:paddingBottom="10dp"
                 android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                 android:textSize="15dp" />
-
         </LinearLayout>
-
-
     </ScrollView>
 
+    <!--Creating a toolbar widget to display a toolbar/navigation bar at the bottom of the page to help users navigate them-selves around the application.-->
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -186,6 +194,7 @@
         android:background="@drawable/bottom_toolbar_background"
         android:paddingTop="5dp">
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/loginsuccessful_activity_login_successful_page_btn"
             android:src="@drawable/home_icon"
@@ -197,6 +206,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"/>
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/loginsuccessful_activity_restock_inventory_page_btn"
             android:src="@drawable/restock_icon"
@@ -209,6 +219,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter" />
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/loginsuccessful_activity_issue_books_page_btn"
             android:src="@drawable/issue_book_icon"
@@ -221,6 +232,7 @@
             android:paddingRight="10dp"
             android:scaleType="fitCenter" />
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/loginsuccessful_activity_return_books_page_btn"
             android:src="@drawable/return_book_icon"
@@ -232,6 +244,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"/>
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/loginsuccessful_activity_view_account_page_btnv"
             android:src="@drawable/user_profile_icon"

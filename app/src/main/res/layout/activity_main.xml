@@ -1,3 +1,4 @@
+<!--Creating a relative layout to allow the subgroups (e.g. ImageView) to be positioned easily.-->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,7 +9,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
+    <!--Creating a ScrollView giving users the ability to scroll down the page if it is required. -->
     <ScrollView
         android:id="@+id/main_activity_scroll_view_overall"
         android:layout_width="match_parent"
@@ -17,13 +18,14 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+        <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
         <LinearLayout
             android:id="@+id/main_activity_linear_layout_for_logo_and_welcome_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
+            <!--Creating an imageview allowing the application to display a specified image with the set properties below.-->
             <ImageView
                 android:id="@+id/main_activity_zoyinc_powered_comics_logo_dsp"
                 android:contentDescription="@string/zoyinc_powered_comics_logo_description"
@@ -34,6 +36,8 @@
                 android:paddingTop="30dp"
                 android:paddingBottom="10dp"/>
 
+
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/main_activity_login_heading_txt_view"
                 android:text="@string/main_activity_login_heading"
@@ -51,6 +55,8 @@
                 android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                 android:gravity="center_horizontal"/>
 
+
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/main_activity_login_subheading_txt_view"
                 android:text="@string/main_activity_login_subheading"
@@ -60,7 +66,7 @@
                 android:textSize="15dp"
                 android:textColor="@color/black" />
 
-
+            <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
             <LinearLayout
                 android:id="@+id/main_activity_linear_layout_for_login_edittext"
                 android:layout_width="match_parent"
@@ -68,6 +74,7 @@
                 android:layout_marginTop="50dp"
                 android:orientation="vertical">
 
+                <!--Creating a text box allowing users to enter the required text with the set properties below.-->
                 <EditText
                     android:id="@+id/main_activity_login_email_address_et"
                     android:layout_width="match_parent"
@@ -82,7 +89,7 @@
                     android:maxLines="1"
                     android:textColor="@color/black"/>
 
-
+                <!--Creating a text box allowing users to enter the required text with the set properties below.-->
                 <EditText
                     android:id="@+id/main_activity_login_password_et"
                     android:layout_width="match_parent"
@@ -100,13 +107,14 @@
                     android:textColor="@color/black"/>
             </LinearLayout>
 
+            <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
             <LinearLayout
                 android:id="@+id/main_activity_linear_layout_for_action_btns"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp">
 
-
+                <!--Creating a button allowing the application to display a set button with the set properties below.-->
                 <Button
                     android:id="@+id/main_activity_login_btn"
                     android:text="@string/main_activity_login_btn_txt_dsp"
@@ -120,7 +128,7 @@
                     android:textAllCaps="false"
                     android:textColor="@color/white" />
 
-
+                <!--Creating a button allowing the application to display a set button with the set properties below.-->
                 <Button
                     android:id="@+id/main_activity_register_btn"
                     android:text="@string/main_activity_register_btn_txt_dsp"
@@ -134,6 +142,7 @@
                     android:textColor="@color/white" />
             </LinearLayout>
 
+            <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
             <LinearLayout
                 android:id="@+id/main_activity_linear_layout_for_resetting_users_password"
                 android:layout_width="wrap_content"
@@ -142,6 +151,7 @@
                 android:padding="3dp"
                 android:orientation="horizontal">
 
+                <!--Creating a textview allowing the application to display set text with the set properties below.-->
                 <TextView
                     android:id="@+id/main_activity_reset_password_txt_dsp"
                     android:layout_width="wrap_content"
@@ -152,6 +162,7 @@
                     android:text="@string/main_activity_password_reminder_dsp"
                     android:textSize="15dp" />
 
+                <!--Creating a textview allowing the application to display set text with the set properties below.-->
                 <TextView
                     android:id="@+id/main_activity_reset_password_btn"
                     android:text="@string/main_activity_password_rq_btn_dsp"

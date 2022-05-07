@@ -1,3 +1,4 @@
+<!--Creating a relative layout to allow the subgroups (e.g. ImageView) to be positioned easily.-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,7 +9,7 @@
     android:orientation="vertical"
     tools:context=".IssueInventoryActivity">
 
-
+    <!--Creating a ScrollView giving users the ability to scroll down the page if it is required. -->
     <ScrollView
         android:id="@+id/issueinventory_activity_scroll_view"
         android:layout_width="match_parent"
@@ -17,14 +18,14 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-
+        <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
         <LinearLayout
             android:id="@+id/issueinventory_activity_linear_layout_for_logo_and_welcome_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
+            <!--Creating an imageview allowing the application to display a specified image with the set properties below.-->
             <ImageView
                 android:id="@+id/issueinventory_activity_zoyinc_powered_comics_logo_dsp"
                 android:layout_width="match_parent"
@@ -35,6 +36,7 @@
                 android:paddingBottom="10dp"
                 android:src="@drawable/zoyincpoweredcomics_logo" />
 
+            <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/issueinventory_activity_main_heading"
                 android:text="@string/issueinventory_activity_main_heading"
@@ -53,7 +55,7 @@
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
-
+            <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
             <LinearLayout
                 android:id="@+id/issueinventory_activity_linear_layout_for_all_items"
                 android:layout_width="match_parent"
@@ -61,12 +63,14 @@
                 android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
+                <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
                 <LinearLayout
                     android:id="@+id/issueinventory_activity_linear_layout_for_item_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp">
 
+                    <!--Creating a textview allowing the application to display set text with the set properties below.-->
                     <TextView
                         android:id="@+id/issueinventory_activity_item_1"
                         android:layout_width="wrap_content"
@@ -80,6 +84,7 @@
                         android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                         android:textSize="15dp" />
 
+                    <!--Creating a button allowing the application to display a set button with the set properties below.-->
                     <Button
                         android:id="@+id/issueinventory_activity_item_1_issue_btn"
                         android:layout_width="wrap_content"
@@ -94,12 +99,14 @@
                         android:textColor="@color/white" />
                 </LinearLayout>
 
+                <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
                 <LinearLayout
                     android:id="@+id/issueinventory_activity_linear_layout_for_item_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp">
 
+                    <!--Creating a textview allowing the application to display set text with the set properties below.-->
                     <TextView
                         android:id="@+id/issueinventory_activity_item_2"
                         android:layout_width="wrap_content"
@@ -113,6 +120,7 @@
                         android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                         android:textSize="15dp" />
 
+                    <!--Creating a button allowing the application to display a set button with the set properties below.-->
                     <Button
                         android:id="@+id/issueinventory_activity_item_2_issue_btn"
                         android:layout_width="wrap_content"
@@ -127,12 +135,14 @@
                         android:textColor="@color/white" />
                 </LinearLayout>
 
+                <!--Creating a linear layout allowing subgroups in this layout to align in a single direction (either vertically or horizontally).-->
                 <LinearLayout
                     android:id="@+id/issueinventory_activity_linear_layout_for_item_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp">
 
+                    <!--Creating a textview allowing the application to display set text with the set properties below.-->
                     <TextView
                         android:id="@+id/issueinventory_activity_item_3"
                         android:layout_width="wrap_content"
@@ -146,6 +156,7 @@
                         android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                         android:textSize="15dp" />
 
+                    <!--Creating a button allowing the application to display a set button with the set properties below.-->
                     <Button
                         android:id="@+id/issueinventory_activity_item_3_issue_btn"
                         android:layout_width="wrap_content"
@@ -159,21 +170,19 @@
                         android:textAllCaps="false"
                         android:textColor="@color/white" />
                 </LinearLayout>
-
             </LinearLayout>
-
         </LinearLayout>
-
     </ScrollView>
 
+    <!--Creating a toolbar widget to display a toolbar/navigation bar at the bottom of the page to help users navigate them-selves around the application.-->
     <androidx.appcompat.widget.Toolbar
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bottom_toolbar_background"
         android:paddingTop="5dp">
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/issueinventory_activity_login_successful_page_btn"
             android:src="@drawable/home_icon"
@@ -185,6 +194,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"/>
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/issueinventory_activity_restock_inventory_page_btn"
             android:src="@drawable/restock_icon"
@@ -197,6 +207,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter" />
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/issueinventory_activity_issue_books_page_btn"
             android:src="@drawable/issue_book_icon"
@@ -209,6 +220,7 @@
             android:paddingRight="10dp"
             android:scaleType="fitCenter" />
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/issueinventory_activity_return_books_page_btn"
             android:src="@drawable/return_book_icon"
@@ -220,6 +232,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"/>
 
+        <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
             android:id="@+id/issueinventory_activity_view_account_page_btnv"
             android:src="@drawable/user_profile_icon"
@@ -231,8 +244,5 @@
             android:layout_margin="2dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter" />
-
-
     </androidx.appcompat.widget.Toolbar>
-
 </RelativeLayout>
