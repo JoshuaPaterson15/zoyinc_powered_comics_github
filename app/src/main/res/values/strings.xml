@@ -32,6 +32,7 @@
     <string name="main_activity_register_btn_txt_dsp">Register</string>
     <string name="main_activity_password_reminder_dsp">Forgot your Password? </string>
     <string name="main_activity_password_rq_btn_dsp"> Reset Password</string>
+    <string name="main_activity_reset_inventory_btn_dsp">Reset Inventory</string>
     <string name="main_activity_inventory_stock_heading_txt"><u>Inventory Stock -</u></string>
     <string name="main_activity_inventory_stock_sub_heading_txt">Here is the current infomration we have about the stock levels for all of your comics.</string>
 

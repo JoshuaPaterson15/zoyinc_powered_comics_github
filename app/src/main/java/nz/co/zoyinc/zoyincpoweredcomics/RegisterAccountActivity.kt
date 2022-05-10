@@ -42,7 +42,7 @@ class RegisterAccountActivity : AppCompatActivity() {
         //If the user presses the button called "register_account_activity_register_account_btn", the system will begin to register this user onto the database (hosted by Google Firebase).
         register_account_activity_register_account_btn.setOnClickListener {
 
-            //Text conversions to a string value (this is more of a safety measure).//
+            //Text conversions to a String value (this is more of a safety measure).//
             val email = Register_Email!!.text.toString()
             val pass = Register_Password!!.text.toString()
             val uname = Register_Username!!.text.toString()

@@ -28,6 +28,5 @@
             android:text="Are you sure you want to delete your account?"
             android:textColor="@color/white"
             android:textSize="23sp" />
-
     </LinearLayout>
 </ScrollView>

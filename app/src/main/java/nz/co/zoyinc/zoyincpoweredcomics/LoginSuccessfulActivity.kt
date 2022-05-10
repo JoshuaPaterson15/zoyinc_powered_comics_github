@@ -21,6 +21,8 @@ class LoginSuccessfulActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login_successful) //Setting the content page to activity_login_successful for this activity.//
+        val firestore_database = Firebase.firestore  //Setting the firestore_database variable to the Google Firebase/Firestore network.//
+
 
         var stored_userDetails = FirebaseAuth.getInstance().currentUser //Collecting details saved using the Firebase Authenticator about the current user and setting this as a variable called stored_userDetails.//
 
@@ -102,6 +104,25 @@ class LoginSuccessfulActivity : AppCompatActivity() {
         loginsuccessful_activity_login_successful_page_btn.setOnClickListener {
             Toast.makeText(this, "Sorry, you are already on this page. ", Toast.LENGTH_SHORT).show()
         }
+
+        //Once the button named "loginsuccessful_activity_reset_inventory_btn" is pressed, the system reset the inventory stock to the specified stock levels noted in the assessment instructions.//
+        loginsuccessful_activity_reset_inventory_btn.setOnClickListener {
+            //The following .updates() are to reset the stock levels of each document/comic as noted in the student instructions.//
+            firestore_database.collection("comicbook_products").document("ZPC_CB01")
+                .update("available_stock", 8,"issued_stock",0)
+            firestore_database.collection("comicbook_products").document("ZPC_CB02")
+                .update("available_stock", 12,"issued_stock",0)
+            firestore_database.collection("comicbook_products").document("ZPC_CB03")
+                .update("available_stock", 3,"issued_stock",0)
+
+            //Once the task have been completed successfully, the page will reload to reflect the new updates above.//
+            val i = Intent(this@LoginSuccessfulActivity, LoginSuccessfulActivity::class.java)
+            startActivity(i)
+            finish()
+
+            //Once the inventory stock has been reset successfully (and once the page has been reloaded), the user is notified that the reset task was successful.//
+            Toast.makeText(this, "Inventory reset successful.", Toast.LENGTH_SHORT).show()
+            }
 
         //Once the button named "loginsuccessful_activity_restock_inventory_page_btn" is pressed, the user is sent to the RestockInventoryActivity.//
         loginsuccessful_activity_restock_inventory_page_btn.setOnClickListener {

@@ -103,7 +103,7 @@
                 android:paddingBottom="20dp"
                 android:textColor="@color/black" />
 
-            <!--Adding a gap between the email display and the inventory stock heading.-->
+            <!--Adding a gap/line between the email display and the inventory stock heading.-->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -183,6 +183,22 @@
                 android:paddingBottom="10dp"
                 android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                 android:textSize="15dp" />
+
+
+            <!--Creating a button allowing the application to display a set button with the set properties below.-->
+            <Button
+                android:id="@+id/loginsuccessful_activity_reset_inventory_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/primary_button_background"
+                android:text="@string/main_activity_reset_inventory_btn_dsp"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
         </LinearLayout>
     </ScrollView>
 
