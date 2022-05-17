@@ -234,12 +234,13 @@
 
         <!--Creating an image button (a button displayed as an image) for the toolbar so the application can respond when the user taps the image.-->
         <ImageButton
-            android:id="@+id/returninventory_activity_view_account_page_btnv"
+            android:id="@+id/returninventory_activity_view_account_page_btn"
             android:src="@drawable/user_profile_icon"
             android:background="@drawable/bottom_toolbar_buttons_background_circular"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_gravity="right"
+            android:paddingRight="10dp"
             android:layout_margin="2dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter" />

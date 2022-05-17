@@ -28,17 +28,16 @@
             <!--Creating an imageview allowing the application to display a specified image with the set properties below.-->
             <ImageView
                 android:id="@+id/loginsuccessful_activity_zoyinc_powered_comics_logo_dsp"
-                android:contentDescription="@string/zoyinc_powered_comics_logo_description"
-                android:src="@drawable/zoyincpoweredcomics_logo"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_gravity="center"
-                android:paddingTop="30dp" />
+                android:contentDescription="@string/zoyinc_powered_comics_logo_description"
+                android:paddingTop="30dp"
+                android:src="@drawable/zoyincpoweredcomics_logo" />
 
             <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/loginsuccessful_activity_main_heading"
-                android:text="@string/loginsuccessful_activity_main_heading"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -48,6 +47,7 @@
                 android:paddingLeft="10dp"
                 android:paddingTop="2dp"
                 android:paddingRight="10dp"
+                android:text="@string/loginsuccessful_activity_main_heading"
                 android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                 android:textColor="@color/black"
                 android:textSize="30dp"
@@ -56,7 +56,6 @@
             <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/loginsuccessful_activity_subheading"
-                android:text="@string/loginsuccessful_activity_sub_heading"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -67,13 +66,13 @@
                 android:maxLines="1"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
+                android:text="@string/loginsuccessful_activity_sub_heading"
                 android:textColor="@color/black"
-                android:textSize="30dp"/>
+                android:textSize="30dp" />
 
             <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/loginsuccessful_activity_signed_in_description"
-                android:text="@string/loginsuccessful_activity_signed_in_txt_dsp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -84,6 +83,7 @@
                 android:maxLines="1"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
+                android:text="@string/loginsuccessful_activity_signed_in_txt_dsp"
                 android:textColor="@color/black" />
 
             <!--Creating a textview allowing the application to display set text with the set properties below.-->
@@ -112,7 +112,6 @@
             <!--Creating a textview allowing the application to display set text with the set properties below.-->
             <TextView
                 android:id="@+id/main_activity_stock_heading_dsp"
-                android:text="@string/main_activity_inventory_stock_heading_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -121,6 +120,7 @@
                 android:gravity="center_horizontal"
                 android:maxLines="1"
                 android:paddingTop="10dp"
+                android:text="@string/main_activity_inventory_stock_heading_txt"
                 android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
                 android:textColor="@color/black"
                 android:textSize="25dp"
@@ -149,8 +149,8 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:paddingTop="20dp"
                 android:paddingLeft="10dp"
+                android:paddingTop="20dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
                 android:textAppearance="@style/Widget.AppCompat.Spinner.Underlined"
@@ -191,8 +191,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:background="@drawable/primary_button_background"
                 android:text="@string/main_activity_reset_inventory_btn_dsp"
