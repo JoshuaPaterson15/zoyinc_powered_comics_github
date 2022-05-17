@@ -171,7 +171,7 @@ class ReturnInventoryActivity : AppCompatActivity() {
         }
 
         //Once the button named "returninventory_activity_view_account_page_btnv" is pressed, the user is sent to the AccountDetailsActivity.//
-        returninventory_activity_view_account_page_btnv.setOnClickListener {
+        returninventory_activity_view_account_page_btn.setOnClickListener {
             val i = Intent(this@ReturnInventoryActivity, AccountDetailsActivity::class.java)
             startActivity(i)
             finish()
