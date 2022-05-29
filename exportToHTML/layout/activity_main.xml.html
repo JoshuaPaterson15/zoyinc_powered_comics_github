@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>activity_main.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_main.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;RelativeLayout</span>
+    <span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_relative_layout_overall&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:background</span><span class="s2">=&quot;@color/primary_background_colour&quot;</span>
+    <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+    <span class="s1">tools:context</span><span class="s2">=&quot;.MainActivity&quot;</span><span class="s0">&gt;</span>
+
+
+    <span class="s0">&lt;ScrollView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_scroll_view_overall&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;20dp&quot;</span>
+        <span class="s1">android:gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;LinearLayout</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_linear_layout_for_logo_and_welcome_text&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+
+            <span class="s0">&lt;ImageView</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_zoyinc_powered_comics_logo_dsp&quot;</span>
+                <span class="s1">android:contentDescription</span><span class="s2">=&quot;@string/zoyinc_powered_comics_logo_description&quot;</span>
+                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/zoyincpoweredcomics_logo&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;235dp&quot;</span>
+                <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+                <span class="s1">android:paddingTop</span><span class="s2">=&quot;30dp&quot;</span>
+                <span class="s1">android:paddingBottom</span><span class="s2">=&quot;10dp&quot;</span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;TextView</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_login_heading_txt_view&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/main_activity_login_heading&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                <span class="s1">android:paddingTop</span><span class="s2">=&quot;10dp&quot;</span>
+                <span class="s1">android:paddingLeft</span><span class="s2">=&quot;10dp&quot;</span>
+                <span class="s1">android:paddingRight</span><span class="s2">=&quot;10dp&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30dp&quot;</span>
+                <span class="s1">android:maxLines</span><span class="s2">=&quot;1&quot;</span>
+                <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;@color/black&quot;</span>
+                <span class="s1">android:autoSizeTextType</span><span class="s2">=&quot;uniform&quot;</span>
+                <span class="s1">android:textAppearance</span><span class="s2">=&quot;@style/Widget.AppCompat.Spinner.Underlined&quot;</span>
+                <span class="s1">android:gravity</span><span class="s2">=&quot;center_horizontal&quot;</span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;TextView</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_login_subheading_txt_view&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/main_activity_login_subheading&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;15dp&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;@color/black&quot; </span><span class="s0">/&gt;</span>
+
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_linear_layout_for_login_edittext&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;50dp&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;EditText</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_login_email_address_et&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;30dp&quot;</span>
+                    <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;30dp&quot;</span>
+                    <span class="s1">android:padding</span><span class="s2">=&quot;10dp&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@drawable/primary_edit_text_background&quot;</span>
+                    <span class="s1">android:hint</span><span class="s2">=&quot;@string/email_address_etext_input_hint&quot;</span>
+                    <span class="s1">android:imeActionLabel</span><span class="s2">=&quot;@string/email_address_etext_actionlabel&quot;</span>
+                    <span class="s1">android:imeOptions</span><span class="s2">=&quot;actionUnspecified&quot;</span>
+                    <span class="s1">android:maxLines</span><span class="s2">=&quot;1&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/black&quot;</span><span class="s0">/&gt;</span>
+
+
+                <span class="s0">&lt;EditText</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_login_password_et&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;30dp&quot;</span>
+                    <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;30dp&quot;</span>
+                    <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span>
+                    <span class="s1">android:padding</span><span class="s2">=&quot;10dp&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@drawable/primary_edit_text_background&quot;</span>
+                    <span class="s1">android:hint</span><span class="s2">=&quot;@string/password_etext_input_hint&quot;</span>
+                    <span class="s1">android:imeActionLabel</span><span class="s2">=&quot;@string/password_etext_actionlabel&quot;</span>
+                    <span class="s1">android:imeOptions</span><span class="s2">=&quot;actionUnspecified&quot;</span>
+                    <span class="s1">android:inputType</span><span class="s2">=&quot;textPassword&quot;</span>
+                    <span class="s1">android:maxLines</span><span class="s2">=&quot;1&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/black&quot;</span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_linear_layout_for_action_btns&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;16dp&quot;</span><span class="s0">&gt;</span>
+
+
+                <span class="s0">&lt;Button</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_login_btn&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;@string/main_activity_login_btn_txt_dsp&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@drawable/primary_button_background&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                    <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;20dp&quot;</span>
+                    <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;5dp&quot;</span>
+                    <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                    <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot; </span><span class="s0">/&gt;</span>
+
+
+                <span class="s0">&lt;Button</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_register_btn&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;@string/main_activity_register_btn_txt_dsp&quot;</span>
+                    <span class="s1">android:background</span><span class="s2">=&quot;@drawable/primary_button_background&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;5dp&quot;</span>
+                    <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;20dp&quot;</span>
+                    <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                    <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_linear_layout_for_resetting_users_password&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                <span class="s1">android:padding</span><span class="s2">=&quot;3dp&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;TextView</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_reset_password_txt_dsp&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                    <span class="s1">android:paddingTop</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/black&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;@string/main_activity_password_reminder_dsp&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s2">=&quot;15dp&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;TextView</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/main_activity_reset_password_btn&quot;</span>
+                    <span class="s1">android:text</span><span class="s2">=&quot;@string/main_activity_password_rq_btn_dsp&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                    <span class="s1">android:paddingTop</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s2">=&quot;15dp&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s2">=&quot;@color/purple_700&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+        <span class="s0">&lt;/LinearLayout&gt;</span>
+    <span class="s0">&lt;/ScrollView&gt;</span>
+<span class="s0">&lt;/RelativeLayout&gt;</span></pre>
+</body>
+</html>

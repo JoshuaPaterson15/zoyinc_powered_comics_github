@@ -1,0 +1,257 @@
+<html>
+<head>
+<title>activity_return_inventory.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_return_inventory.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;RelativeLayout </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_relative_layout&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:background</span><span class="s2">=&quot;@color/primary_background_colour&quot;</span>
+    <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+    <span class="s1">tools:context</span><span class="s2">=&quot;.ReturnInventoryActivity&quot;</span><span class="s0">&gt;</span>
+
+
+    <span class="s0">&lt;ScrollView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_scroll_view&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_marginBottom</span><span class="s2">=&quot;20dp&quot;</span>
+        <span class="s1">android:gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+
+        <span class="s0">&lt;LinearLayout</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_linear_layout_for_logo_and_welcome_text&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+
+            <span class="s0">&lt;ImageView</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_zoyinc_powered_comics_logo_dsp&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;100dp&quot;</span>
+                <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+                <span class="s1">android:contentDescription</span><span class="s2">=&quot;@string/zoyinc_powered_comics_logo_description&quot;</span>
+                <span class="s1">android:paddingTop</span><span class="s2">=&quot;10dp&quot;</span>
+                <span class="s1">android:paddingBottom</span><span class="s2">=&quot;10dp&quot;</span>
+                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/zoyincpoweredcomics_logo&quot; </span><span class="s0">/&gt;</span>
+
+            <span class="s0">&lt;TextView</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_main_heading&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/returninventory_activity_main_heading&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                <span class="s1">android:autoSizeMaxTextSize</span><span class="s2">=&quot;30dp&quot;</span>
+                <span class="s1">android:autoSizeTextType</span><span class="s2">=&quot;uniform&quot;</span>
+                <span class="s1">android:gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                <span class="s1">android:maxLines</span><span class="s2">=&quot;1&quot;</span>
+                <span class="s1">android:paddingLeft</span><span class="s2">=&quot;10dp&quot;</span>
+                <span class="s1">android:paddingTop</span><span class="s2">=&quot;10dp&quot;</span>
+                <span class="s1">android:paddingRight</span><span class="s2">=&quot;10dp&quot;</span>
+                <span class="s1">android:textAppearance</span><span class="s2">=&quot;@style/Widget.AppCompat.Spinner.Underlined&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;@color/black&quot;</span>
+                <span class="s1">android:textSize</span><span class="s2">=&quot;30dp&quot;</span>
+                <span class="s1">android:textStyle</span><span class="s2">=&quot;bold&quot; </span><span class="s0">/&gt;</span>
+
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_linear_layout_for_all_items&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;20dp&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;LinearLayout</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_linear_layout_for_item_1&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_item_1&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;10dp&quot;</span>
+                        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;10dp&quot;</span>
+                        <span class="s1">android:paddingLeft</span><span class="s2">=&quot;5dp&quot;</span>
+                        <span class="s1">android:paddingRight</span><span class="s2">=&quot;5dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/item_list_background&quot;</span>
+                        <span class="s1">android:textAppearance</span><span class="s2">=&quot;@style/Widget.AppCompat.Spinner.Underlined&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;15dp&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_item_1_issue_btn&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;20dp&quot;</span>
+                        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;20dp&quot;</span>
+                        <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/primary_button_background&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;@string/return_inventory_btn_name&quot;</span>
+                        <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot; </span><span class="s0">/&gt;</span>
+                <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s0">&lt;LinearLayout</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_linear_layout_for_item_2&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_item_2&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;10dp&quot;</span>
+                        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;10dp&quot;</span>
+                        <span class="s1">android:paddingLeft</span><span class="s2">=&quot;5dp&quot;</span>
+                        <span class="s1">android:paddingRight</span><span class="s2">=&quot;5dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/item_list_background&quot;</span>
+                        <span class="s1">android:textAppearance</span><span class="s2">=&quot;@style/Widget.AppCompat.Spinner.Underlined&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;15dp&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_item_2_issue_btn&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;20dp&quot;</span>
+                        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;20dp&quot;</span>
+                        <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/primary_button_background&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;@string/return_inventory_btn_name&quot;</span>
+                        <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot; </span><span class="s0">/&gt;</span>
+                <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s0">&lt;LinearLayout</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_linear_layout_for_item_3&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;TextView</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_item_3&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;10dp&quot;</span>
+                        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;10dp&quot;</span>
+                        <span class="s1">android:paddingLeft</span><span class="s2">=&quot;5dp&quot;</span>
+                        <span class="s1">android:paddingRight</span><span class="s2">=&quot;5dp&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/item_list_background&quot;</span>
+                        <span class="s1">android:textAppearance</span><span class="s2">=&quot;@style/Widget.AppCompat.Spinner.Underlined&quot;</span>
+                        <span class="s1">android:textSize</span><span class="s2">=&quot;15dp&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;Button</span>
+                        <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_item_3_issue_btn&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                        <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                        <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;20dp&quot;</span>
+                        <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;20dp&quot;</span>
+                        <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/primary_button_background&quot;</span>
+                        <span class="s1">android:text</span><span class="s2">=&quot;@string/return_inventory_btn_name&quot;</span>
+                        <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                        <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot; </span><span class="s0">/&gt;</span>
+                <span class="s0">&lt;/LinearLayout&gt;</span>
+
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+
+        <span class="s0">&lt;/LinearLayout&gt;</span>
+
+    <span class="s0">&lt;/ScrollView&gt;</span>
+
+    <span class="s0">&lt;androidx.appcompat.widget.Toolbar</span>
+
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_alignParentBottom</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bottom_toolbar_background&quot;</span>
+        <span class="s1">android:paddingTop</span><span class="s2">=&quot;5dp&quot;</span><span class="s0">&gt;</span>
+
+
+        <span class="s0">&lt;ImageButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_login_successful_page_btn&quot;</span>
+            <span class="s1">android:src</span><span class="s2">=&quot;@drawable/home_icon&quot;</span>
+            <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bottom_toolbar_buttons_background&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;45dp&quot;</span>
+            <span class="s1">android:layout_gravity</span><span class="s2">=&quot;left&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s2">=&quot;2dp&quot;</span>
+            <span class="s1">android:adjustViewBounds</span><span class="s2">=&quot;true&quot;</span>
+            <span class="s1">android:scaleType</span><span class="s2">=&quot;fitCenter&quot;</span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;ImageButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_restock_inventory_page_btn&quot;</span>
+            <span class="s1">android:src</span><span class="s2">=&quot;@drawable/restock_icon&quot;</span>
+            <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bottom_toolbar_buttons_background&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;45dp&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s2">=&quot;2dp&quot;</span>
+            <span class="s1">android:paddingRight</span><span class="s2">=&quot;10dp&quot;</span>
+            <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+            <span class="s1">android:adjustViewBounds</span><span class="s2">=&quot;true&quot;</span>
+            <span class="s1">android:scaleType</span><span class="s2">=&quot;fitCenter&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;ImageButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_issue_books_page_btn&quot;</span>
+            <span class="s1">android:src</span><span class="s2">=&quot;@drawable/issue_book_icon&quot;</span>
+            <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bottom_toolbar_buttons_background&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;45dp&quot;</span>
+            <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s2">=&quot;2dp&quot;</span>
+            <span class="s1">android:adjustViewBounds</span><span class="s2">=&quot;true&quot;</span>
+            <span class="s1">android:paddingRight</span><span class="s2">=&quot;10dp&quot;</span>
+            <span class="s1">android:scaleType</span><span class="s2">=&quot;fitCenter&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;ImageButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_return_books_page_btn&quot;</span>
+            <span class="s1">android:src</span><span class="s2">=&quot;@drawable/return_book_icon&quot;</span>
+            <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bottom_toolbar_buttons_background&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;45dp&quot;</span>
+            <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s2">=&quot;2dp&quot;</span>
+            <span class="s1">android:adjustViewBounds</span><span class="s2">=&quot;true&quot;</span>
+            <span class="s1">android:scaleType</span><span class="s2">=&quot;fitCenter&quot;</span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;ImageButton</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/returninventory_activity_view_account_page_btnv&quot;</span>
+            <span class="s1">android:src</span><span class="s2">=&quot;@drawable/user_profile_icon&quot;</span>
+            <span class="s1">android:background</span><span class="s2">=&quot;@drawable/bottom_toolbar_buttons_background_circular&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;55dp&quot;</span>
+            <span class="s1">android:layout_gravity</span><span class="s2">=&quot;right&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s2">=&quot;2dp&quot;</span>
+            <span class="s1">android:adjustViewBounds</span><span class="s2">=&quot;true&quot;</span>
+            <span class="s1">android:scaleType</span><span class="s2">=&quot;fitCenter&quot; </span><span class="s0">/&gt;</span>
+
+
+    <span class="s0">&lt;/androidx.appcompat.widget.Toolbar&gt;</span>
+
+<span class="s0">&lt;/RelativeLayout&gt;</span></pre>
+</body>
+</html>

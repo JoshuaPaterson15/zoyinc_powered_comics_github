@@ -1,0 +1,254 @@
+<html>
+<head>
+<title>activity_account_details.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #e8bf6a;}
+.s2 { color: #bababa;}
+.s3 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_account_details.xml</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">&lt;RelativeLayout </span><span class="s2">xmlns:android</span><span class="s3">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s2">xmlns:app</span><span class="s3">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s2">xmlns:tools</span><span class="s3">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_relative_layout&quot;</span>
+    <span class="s2">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s2">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s2">android:background</span><span class="s3">=&quot;@color/primary_background_colour&quot;</span>
+    <span class="s2">android:orientation</span><span class="s3">=&quot;vertical&quot;</span>
+    <span class="s2">tools:context</span><span class="s3">=&quot;.AccountDetailsActivity&quot;</span><span class="s1">&gt;</span>
+
+
+    <span class="s1">&lt;ScrollView</span>
+        <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_scroll_view&quot;</span>
+        <span class="s2">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s2">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s2">android:layout_marginBottom</span><span class="s3">=&quot;20dp&quot;</span>
+        <span class="s2">android:gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+        <span class="s2">android:orientation</span><span class="s3">=&quot;vertical&quot;</span><span class="s1">&gt;</span>
+
+        <span class="s1">&lt;LinearLayout</span>
+            <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_linear_layout_for_logo_and_welcome_text&quot;</span>
+            <span class="s2">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+            <span class="s2">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s2">android:orientation</span><span class="s3">=&quot;vertical&quot;</span><span class="s1">&gt;</span>
+
+            <span class="s1">&lt;ImageView</span>
+                <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_zoyinc_logo&quot;</span>
+                <span class="s2">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+                <span class="s2">android:layout_height</span><span class="s3">=&quot;100dp&quot;</span>
+                <span class="s2">android:layout_gravity</span><span class="s3">=&quot;center&quot;</span>
+                <span class="s2">android:contentDescription</span><span class="s3">=&quot;@string/zoyinc_powered_comics_logo_description&quot;</span>
+                <span class="s2">android:paddingTop</span><span class="s3">=&quot;10dp&quot;</span>
+                <span class="s2">android:paddingBottom</span><span class="s3">=&quot;10dp&quot;</span>
+                <span class="s2">android:src</span><span class="s3">=&quot;@drawable/zoyincpoweredcomics_logo&quot; </span><span class="s1">/&gt;</span>
+
+                <span class="s1">&lt;TextView</span>
+                <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_main_heading&quot;</span>
+                <span class="s2">android:text</span><span class="s3">=&quot;@string/account_activity_main_heading&quot;</span>
+                <span class="s2">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s2">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s2">android:layout_gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+                <span class="s2">android:autoSizeMaxTextSize</span><span class="s3">=&quot;30dp&quot;</span>
+                <span class="s2">android:autoSizeTextType</span><span class="s3">=&quot;uniform&quot;</span>
+                <span class="s2">android:gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+                <span class="s2">android:maxLines</span><span class="s3">=&quot;1&quot;</span>
+                <span class="s2">android:paddingTop</span><span class="s3">=&quot;10dp&quot;</span>
+                <span class="s2">android:textAppearance</span><span class="s3">=&quot;@style/Widget.AppCompat.Spinner.Underlined&quot;</span>
+                <span class="s2">android:textColor</span><span class="s3">=&quot;@color/black&quot;</span>
+                <span class="s2">android:textSize</span><span class="s3">=&quot;30dp&quot;</span>
+                <span class="s2">android:textStyle</span><span class="s3">=&quot;bold&quot; </span><span class="s1">/&gt;</span>
+
+            <span class="s1">&lt;TextView</span>
+                <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_username_dsp&quot;</span>
+                <span class="s2">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s2">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s2">android:layout_gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+                <span class="s2">android:autoSizeMaxTextSize</span><span class="s3">=&quot;16dp&quot;</span>
+                <span class="s2">android:autoSizeTextType</span><span class="s3">=&quot;uniform&quot;</span>
+                <span class="s2">android:gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+                <span class="s2">android:maxLines</span><span class="s3">=&quot;2&quot;</span>
+                <span class="s2">android:maxLength</span><span class="s3">=&quot;30&quot;</span>
+                <span class="s2">android:paddingTop</span><span class="s3">=&quot;2dp&quot;</span>
+                <span class="s2">android:textColor</span><span class="s3">=&quot;@color/black&quot;</span>
+                <span class="s2">android:textSize</span><span class="s3">=&quot;16dp&quot; </span><span class="s1">/&gt;</span>
+
+            <span class="s1">&lt;TextView</span>
+                <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_signed_in_email_dsp&quot;</span>
+                <span class="s2">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s2">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s2">android:layout_gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+                <span class="s2">android:autoSizeMaxTextSize</span><span class="s3">=&quot;16dp&quot;</span>
+                <span class="s2">android:autoSizeTextType</span><span class="s3">=&quot;uniform&quot;</span>
+                <span class="s2">android:gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+                <span class="s2">android:maxLines</span><span class="s3">=&quot;1&quot;</span>
+                <span class="s2">android:paddingTop</span><span class="s3">=&quot;2dp&quot;</span>
+                <span class="s2">android:textColor</span><span class="s3">=&quot;@color/black&quot;</span>
+                <span class="s2">android:textSize</span><span class="s3">=&quot;16dp&quot; </span><span class="s1">/&gt;</span>
+
+
+            <span class="s1">&lt;LinearLayout</span>
+                <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_linear_layout_for_signout_and_update_btn&quot;</span>
+                <span class="s2">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+                <span class="s2">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s2">android:layout_gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+                <span class="s2">android:layout_marginTop</span><span class="s3">=&quot;40dp&quot;</span>
+                <span class="s2">android:orientation</span><span class="s3">=&quot;horizontal&quot;</span>
+                <span class="s2">android:padding</span><span class="s3">=&quot;3dp&quot;</span><span class="s1">&gt;</span>
+
+                <span class="s1">&lt;Button</span>
+                    <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_update_profile_btn&quot;</span>
+                    <span class="s2">style</span><span class="s3">=&quot;?android:textAppearanceSmall&quot;</span>
+                    <span class="s2">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+                    <span class="s2">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                    <span class="s2">android:layout_gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+                    <span class="s2">android:layout_marginLeft</span><span class="s3">=&quot;20dp&quot;</span>
+                    <span class="s2">android:layout_marginRight</span><span class="s3">=&quot;5dp&quot;</span>
+                    <span class="s2">android:layout_weight</span><span class="s3">=&quot;1&quot;</span>
+                    <span class="s2">android:background</span><span class="s3">=&quot;@drawable/primary_button_background&quot;</span>
+                    <span class="s2">android:paddingHorizontal</span><span class="s3">=&quot;10dp&quot;</span>
+                    <span class="s2">android:text</span><span class="s3">=&quot;Update Profile&quot;</span>
+                    <span class="s2">android:textAllCaps</span><span class="s3">=&quot;false&quot;</span>
+                    <span class="s2">android:textColor</span><span class="s3">=&quot;@color/black&quot; </span><span class="s1">/&gt;</span>
+
+                <span class="s1">&lt;Button</span>
+                    <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_sign_out_btn&quot;</span>
+                    <span class="s2">style</span><span class="s3">=&quot;?android:textAppearanceSmall&quot;</span>
+                    <span class="s2">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+                    <span class="s2">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                    <span class="s2">android:layout_gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+                    <span class="s2">android:layout_marginLeft</span><span class="s3">=&quot;20dp&quot;</span>
+                    <span class="s2">android:layout_marginRight</span><span class="s3">=&quot;20dp&quot;</span>
+                    <span class="s2">android:layout_weight</span><span class="s3">=&quot;1&quot;</span>
+                    <span class="s2">android:background</span><span class="s3">=&quot;@drawable/primary_button_background&quot;</span>
+                    <span class="s2">android:paddingHorizontal</span><span class="s3">=&quot;10dp&quot;</span>
+                    <span class="s2">android:text</span><span class="s3">=&quot;Sign out&quot;</span>
+                    <span class="s2">android:textAllCaps</span><span class="s3">=&quot;false&quot;</span>
+                    <span class="s2">android:textColor</span><span class="s3">=&quot;@color/black&quot; </span><span class="s1">/&gt;</span>
+
+            <span class="s1">&lt;/LinearLayout&gt;</span>
+
+            <span class="s1">&lt;LinearLayout</span>
+                <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_linear_layout_for_external&quot;</span>
+                <span class="s2">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+                <span class="s2">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s2">android:layout_gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+                <span class="s2">android:orientation</span><span class="s3">=&quot;horizontal&quot;</span>
+                <span class="s2">android:padding</span><span class="s3">=&quot;3dp&quot;</span><span class="s1">&gt;</span>
+
+                <span class="s1">&lt;Button</span>
+                    <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_reset_password_btn&quot;</span>
+                    <span class="s2">style</span><span class="s3">=&quot;?android:textAppearanceSmall&quot;</span>
+                    <span class="s2">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+                    <span class="s2">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                    <span class="s2">android:layout_gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+                    <span class="s2">android:layout_marginLeft</span><span class="s3">=&quot;20dp&quot;</span>
+                    <span class="s2">android:layout_marginRight</span><span class="s3">=&quot;5dp&quot;</span>
+                    <span class="s2">android:layout_weight</span><span class="s3">=&quot;1&quot;</span>
+                    <span class="s2">android:background</span><span class="s3">=&quot;@drawable/primary_button_background&quot;</span>
+                    <span class="s2">android:paddingHorizontal</span><span class="s3">=&quot;10dp&quot;</span>
+                    <span class="s2">android:text</span><span class="s3">=&quot;Reset Password&quot;</span>
+                    <span class="s2">android:textAllCaps</span><span class="s3">=&quot;false&quot;</span>
+                    <span class="s2">android:textColor</span><span class="s3">=&quot;@color/black&quot; </span><span class="s1">/&gt;</span>
+
+                <span class="s1">&lt;Button</span>
+                    <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_delete_account_btn&quot;</span>
+                    <span class="s2">style</span><span class="s3">=&quot;?android:textAppearanceSmall&quot;</span>
+                    <span class="s2">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+                    <span class="s2">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                    <span class="s2">android:layout_gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+                    <span class="s2">android:layout_marginLeft</span><span class="s3">=&quot;20dp&quot;</span>
+                    <span class="s2">android:layout_marginRight</span><span class="s3">=&quot;20dp&quot;</span>
+                    <span class="s2">android:layout_weight</span><span class="s3">=&quot;1&quot;</span>
+                    <span class="s2">android:background</span><span class="s3">=&quot;@drawable/primary_button_background&quot;</span>
+                    <span class="s2">android:paddingHorizontal</span><span class="s3">=&quot;10dp&quot;</span>
+                    <span class="s2">android:text</span><span class="s3">=&quot;Delete Account&quot;</span>
+                    <span class="s2">android:textAllCaps</span><span class="s3">=&quot;false&quot;</span>
+                    <span class="s2">android:textColor</span><span class="s3">=&quot;@color/black&quot; </span><span class="s1">/&gt;</span>
+            <span class="s1">&lt;/LinearLayout&gt;</span>
+        <span class="s1">&lt;/LinearLayout&gt;</span>
+
+    <span class="s1">&lt;/ScrollView&gt;</span>
+
+    <span class="s1">&lt;androidx.appcompat.widget.Toolbar</span>
+
+        <span class="s2">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s2">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s2">android:layout_alignParentBottom</span><span class="s3">=&quot;true&quot;</span>
+        <span class="s2">android:background</span><span class="s3">=&quot;@drawable/bottom_toolbar_background&quot;</span>
+        <span class="s2">android:paddingTop</span><span class="s3">=&quot;5dp&quot;</span><span class="s1">&gt;</span>
+
+
+
+        <span class="s1">&lt;ImageButton</span>
+            <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_login_successful_page_btn&quot;</span>
+            <span class="s2">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s2">android:layout_height</span><span class="s3">=&quot;45dp&quot;</span>
+            <span class="s2">android:layout_gravity</span><span class="s3">=&quot;left&quot;</span>
+            <span class="s2">android:layout_margin</span><span class="s3">=&quot;2dp&quot;</span>
+            <span class="s2">android:adjustViewBounds</span><span class="s3">=&quot;true&quot;</span>
+            <span class="s2">android:background</span><span class="s3">=&quot;@drawable/bottom_toolbar_buttons_background&quot;</span>
+            <span class="s2">android:scaleType</span><span class="s3">=&quot;fitCenter&quot;</span>
+            <span class="s2">android:src</span><span class="s3">=&quot;@drawable/home_icon&quot; </span><span class="s1">/&gt;</span>
+
+        <span class="s1">&lt;ImageButton</span>
+            <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_restock_inventory_page_btn&quot;</span>
+            <span class="s2">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s2">android:layout_height</span><span class="s3">=&quot;45dp&quot;</span>
+            <span class="s2">android:layout_margin</span><span class="s3">=&quot;2dp&quot;</span>
+            <span class="s2">android:paddingRight</span><span class="s3">=&quot;10dp&quot;</span>
+            <span class="s2">android:layout_gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+            <span class="s2">android:adjustViewBounds</span><span class="s3">=&quot;true&quot;</span>
+            <span class="s2">android:background</span><span class="s3">=&quot;@drawable/bottom_toolbar_buttons_background&quot;</span>
+            <span class="s2">android:scaleType</span><span class="s3">=&quot;fitCenter&quot;</span>
+            <span class="s2">android:src</span><span class="s3">=&quot;@drawable/restock_icon&quot; </span><span class="s1">/&gt;</span>
+
+        <span class="s1">&lt;ImageButton</span>
+            <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_issue_books_page_btn&quot;</span>
+            <span class="s2">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s2">android:layout_height</span><span class="s3">=&quot;45dp&quot;</span>
+            <span class="s2">android:layout_gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+            <span class="s2">android:layout_margin</span><span class="s3">=&quot;2dp&quot;</span>
+            <span class="s2">android:adjustViewBounds</span><span class="s3">=&quot;true&quot;</span>
+            <span class="s2">android:paddingRight</span><span class="s3">=&quot;10dp&quot;</span>
+            <span class="s2">android:background</span><span class="s3">=&quot;@drawable/bottom_toolbar_buttons_background&quot;</span>
+            <span class="s2">android:scaleType</span><span class="s3">=&quot;fitCenter&quot;</span>
+            <span class="s2">android:src</span><span class="s3">=&quot;@drawable/issue_book_icon&quot; </span><span class="s1">/&gt;</span>
+
+        <span class="s1">&lt;ImageButton</span>
+            <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_return_books_page_btn&quot;</span>
+            <span class="s2">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s2">android:layout_height</span><span class="s3">=&quot;45dp&quot;</span>
+            <span class="s2">android:layout_gravity</span><span class="s3">=&quot;center_horizontal&quot;</span>
+            <span class="s2">android:layout_margin</span><span class="s3">=&quot;2dp&quot;</span>
+            <span class="s2">android:adjustViewBounds</span><span class="s3">=&quot;true&quot;</span>
+            <span class="s2">android:background</span><span class="s3">=&quot;@drawable/bottom_toolbar_buttons_background&quot;</span>
+            <span class="s2">android:scaleType</span><span class="s3">=&quot;fitCenter&quot;</span>
+            <span class="s2">android:src</span><span class="s3">=&quot;@drawable/return_book_icon&quot; </span><span class="s1">/&gt;</span>
+
+        <span class="s1">&lt;ImageButton</span>
+            <span class="s2">android:id</span><span class="s3">=&quot;@+id/accountdetails_activity_view_account_page_btnv&quot;</span>
+            <span class="s2">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s2">android:layout_height</span><span class="s3">=&quot;55dp&quot;</span>
+            <span class="s2">android:layout_gravity</span><span class="s3">=&quot;right&quot;</span>
+            <span class="s2">android:paddingRight</span><span class="s3">=&quot;10dp&quot;</span>
+            <span class="s2">android:layout_margin</span><span class="s3">=&quot;2dp&quot;</span>
+            <span class="s2">android:adjustViewBounds</span><span class="s3">=&quot;true&quot;</span>
+            <span class="s2">android:background</span><span class="s3">=&quot;@drawable/bottom_toolbar_buttons_background_circular&quot;</span>
+            <span class="s2">android:scaleType</span><span class="s3">=&quot;fitCenter&quot;</span>
+            <span class="s2">android:src</span><span class="s3">=&quot;@drawable/user_profile_icon&quot; </span><span class="s1">/&gt;</span>
+
+
+    <span class="s1">&lt;/androidx.appcompat.widget.Toolbar&gt;</span>
+
+<span class="s1">&lt;/RelativeLayout&gt;</span></pre>
+</body>
+</html>

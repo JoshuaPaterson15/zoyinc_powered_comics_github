@@ -36,15 +36,6 @@ class MainActivity : AppCompatActivity() {
         val firestore_database = Firebase.firestore  //Setting the firestore_database variable to the Google Firebase/Firestore network.//
 
 
-        //The following .updates() are to reset the stock levels of each document/comic as required in the student instructions.//
-        firestore_database.collection("comicbook_products").document("ZPC_CB01")
-            .update("available_stock", 8,"issued_stock",0)
-        firestore_database.collection("comicbook_products").document("ZPC_CB02")
-            .update("available_stock", 12,"issued_stock",0)
-        firestore_database.collection("comicbook_products").document("ZPC_CB03")
-            .update("available_stock", 3,"issued_stock",0)
-
-
         mAuthListener = FirebaseAuth.AuthStateListener { firebaseAuth ->
             val user = firebaseAuth.currentUser//Collecting details saved using the Firebase Authenticator about the current user and setting this as a variable called user.//
             if (user != null) { //If the system has detected that the user is already signed into the app, the user would inform the user and take the user to the LoginSuccessfulActivity.//

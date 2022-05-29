@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>activity_restock_inventory_status_change_rq.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_restock_inventory_status_change_rq.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;ScrollView </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:id</span><span class="s2">=&quot;@+id/restockinventorystatuschangerq_activity_scroll_view&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:background</span><span class="s2">=&quot;@color/primary_background_colour&quot;</span>
+    <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+    <span class="s1">app:layout_constraintCircleRadius</span><span class="s2">=&quot;20dp&quot;</span>
+    <span class="s1">tools:context</span><span class="s2">=&quot;.RestockInventoryStatusChangeRqActivity&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;LinearLayout</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/restockinventorystatuschangerq_activity_linear_layout&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;TextView</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/restockinventorystatuschangerq_activity_heading&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+            <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;10dp&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span>
+            <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;10dp&quot;</span>
+            <span class="s1">android:background</span><span class="s2">=&quot;@drawable/secondary_background&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;@string/restockinventorystatuschangerq_activity_heading&quot;</span>
+            <span class="s1">android:textColor</span><span class="s2">=&quot;@color/black&quot;</span>
+            <span class="s1">android:textSize</span><span class="s2">=&quot;23sp&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;EditText</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/restockinventorystatuschangerq_activity_user_input&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;30dp&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;10dp&quot;</span>
+            <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;30dp&quot;</span>
+            <span class="s1">android:padding</span><span class="s2">=&quot;10dp&quot;</span>
+            <span class="s1">android:background</span><span class="s2">=&quot;@drawable/primary_edit_text_background&quot;</span>
+            <span class="s1">android:hint</span><span class="s2">=&quot;@string/restockinventorystatuschangerq_activity_edittxt_hint&quot;</span>
+            <span class="s1">android:inputType</span><span class="s2">=&quot;phone&quot;</span>
+            <span class="s1">android:maxLines</span><span class="s2">=&quot;1&quot; </span><span class="s0">/&gt;</span>
+
+        <span class="s0">&lt;LinearLayout</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/restockinventorystatuschangerq_activity_linear_layout_for_buttons&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;16dp&quot;</span><span class="s0">&gt;</span>
+
+
+            <span class="s0">&lt;Button</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/restockinventorystatuschangerq_activity_confirm_btn&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+                <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;20dp&quot;</span>
+                <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;5dp&quot;</span>
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                <span class="s1">android:background</span><span class="s2">=&quot;@drawable/primary_button_background&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/continue_txt&quot;</span>
+                <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot; </span><span class="s0">/&gt;</span>
+
+
+            <span class="s0">&lt;Button</span>
+                <span class="s1">android:id</span><span class="s2">=&quot;@+id/restockinventorystatuschangerq_activity_cancel_btn&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_marginLeft</span><span class="s2">=&quot;5dp&quot;</span>
+                <span class="s1">android:layout_marginRight</span><span class="s2">=&quot;20dp&quot;</span>
+                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                <span class="s1">android:background</span><span class="s2">=&quot;@drawable/primary_button_background&quot;</span>
+                <span class="s1">android:text</span><span class="s2">=&quot;@string/cancel_txt&quot;</span>
+                <span class="s1">android:textAllCaps</span><span class="s2">=&quot;false&quot;</span>
+                <span class="s1">android:textColor</span><span class="s2">=&quot;@color/white&quot; </span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;/LinearLayout&gt;</span>
+
+    <span class="s0">&lt;/LinearLayout&gt;</span>
+<span class="s0">&lt;/ScrollView&gt;</span></pre>
+</body>
+</html>
